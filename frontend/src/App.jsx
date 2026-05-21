@@ -396,7 +396,17 @@ function App() {
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ email, password })
       });
-      const data = await readJsonResponse(res, 'Login');
+      let data;
+      try {
+        data = await readJsonResponse(res, 'Login');
+      } catch (readErr) {
+        // If backend replied with non-JSON (HTML) treat as unreachable and fallback
+        if (String(readErr.message || '').includes('returned non-JSON') || String(readErr.message || '').includes('Check VITE_API_BASE_URL')) {
+          startLocalSession(email, password);
+          return;
+        }
+        throw readErr;
+      }
       if (!res.ok || !data.ok) throw new Error(data.error || 'Login failed');
       setAccessToken(data.accessToken);
       setRefreshToken(data.refreshToken);
@@ -424,7 +434,16 @@ function App() {
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ email, password })
       });
-      const data = await readJsonResponse(res, 'Registration');
+      let data;
+      try {
+        data = await readJsonResponse(res, 'Registration');
+      } catch (readErr) {
+        if (String(readErr.message || '').includes('returned non-JSON') || String(readErr.message || '').includes('Check VITE_API_BASE_URL')) {
+          startLocalSession(email, password, 'offline-demo');
+          return;
+        }
+        throw readErr;
+      }
       if (!res.ok || !data.ok) throw new Error(data.error || 'Registration failed');
       setAccessToken(data.accessToken);
       setRefreshToken(data.refreshToken);
