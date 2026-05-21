@@ -1,0 +1,106 @@
+".before-after-viz {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin: 2rem 0;
+}
+
+.state-card {
+  flex: 1;
+  background: var(--bg-card);
+  border: 1px solid var(--border-glass);
+  border-radius: var(--radius-lg);
+  padding: 1.5rem;
+  backdrop-filter: blur(10px);
+}
+
+.before-state {
+  opacity: 0.8;
+  border-color: rgba(255, 255, 255, 0.05);
+}
+
+.after-state {
+  border-color: rgba(16, 185, 129, 0.3);
+  box-shadow: 0 0 20px rgba(16, 185, 129, 0.1);
+  animation: pulseGlow 3s infinite alternate;
+}
+
+.state-header {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 1.5rem;
+  color: var(--text-primary);
+}
+
+.state-header h3 {
+  margin: 0;
+  font-size: 1.1rem;
+}
+
+.after-state .state-header {
+  color: var(--accent-success);
+}
+
+.state-content {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.state-metric {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 0.75rem;
+  border-bottom: 1px solid var(--border-glass);
+}
+
+.state-metric:last-child {
+  border-bottom: none;
+  padding-bottom: 0;
+}
+
+.state-metric .label {
+  color: var(--text-secondary);
+  font-size: 0.9rem;
+}
+
+.state-metric .value {
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+}
+
+.value.muted { color: var(--text-muted); }
+.value.positive { color: var(--accent-success); }
+.value.warning { color: var(--accent-warning); }
+
+.value.highlight {
+  font-size: 1.25rem;
+  text-shadow: 0 0 10px rgba(16, 185, 129, 0.3);
+}
+
+.transition-arrow {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--accent-primary);
+  background: rgba(99, 102, 241, 0.1);
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+
+@keyframes pulseGlow {
+  from { box-shadow: 0 0 10px rgba(16, 185, 129, 0.05); }
+  to { box-shadow: 0 0 25px rgba(16, 185, 129, 0.2); }
+}
+
+@media (max-width: 600px) {
+  .before-after-viz {
+    flex-direction: column;
+ 
+<truncated 87 bytes>

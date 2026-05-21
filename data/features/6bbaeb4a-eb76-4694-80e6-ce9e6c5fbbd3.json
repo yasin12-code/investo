@@ -1,0 +1,741 @@
+{
+  "sessionId": "6bbaeb4a-eb76-4694-80e6-ce9e6c5fbbd3",
+  "savedAt": "2026-05-20T11:37:30.011Z",
+  "features": {
+    "sourcesCount": 5,
+    "summary": {
+      "sourceCount": 5,
+      "claimCount": 71
+    },
+    "normalized": [
+      {
+        "metric": "avg_price_per_marla_dha6",
+        "value": 18000000,
+        "unit": "PKR",
+        "confidence": 0.88,
+        "source": "Punjab Revenue Authority - Lahore Property Market Report Q1 2026",
+        "sourceType": "report",
+        "location": "Average price per marla in DHA Phase 6 as of Q4 2025",
+        "context": "Average price per marla in DHA Phase 6 as of Q4 2025"
+      },
+      {
+        "metric": "property_price_growth_yoy",
+        "value": 18.2,
+        "unit": "percent",
+        "confidence": 0.88,
+        "source": "Punjab Revenue Authority - Lahore Property Market Report Q1 2026",
+        "sourceType": "report",
+        "location": "YoY growth based on registered transactions (DHA Phase 6)",
+        "context": "YoY growth based on registered transactions (DHA Phase 6)"
+      },
+      {
+        "metric": "overall_property_price_growth",
+        "value": 18,
+        "unit": "percent",
+        "confidence": 0.85,
+        "source": "Punjab Revenue Authority - Lahore Property Market Report Q1 2026",
+        "sourceType": "report",
+        "location": "Average property price increase across all major housing societies and commercial zones in Lahore",
+        "context": "Average property price increase across all major housing societies and commercial zones in Lahore"
+      },
+      {
+        "metric": "bahria_town_price_growth",
+        "value": 16.7,
+        "unit": "percent",
+        "confidence": 0.87,
+        "source": "Punjab Revenue Authority - Lahore Property Market Report Q1 2026",
+        "sourceType": "report",
+        "location": "Bahria Town Lahore YoY growth rate",
+        "context": "Bahria Town Lahore YoY growth rate"
+      },
+      {
+        "metric": "gulberg_model_town_growth",
+        "value": {
+          "min": 10,
+          "max": 12
+        },
+        "unit": "percent",
+        "confidence": 0.82,
+        "source": "Punjab Revenue Authority - Lahore Property Market Report Q1 2026",
+        "sourceType": "report",
+        "location": "Gulberg and Model Town growth range",
+        "context": "Gulberg and Model Town growth range"
+      },
+      {
+        "metric": "johar_town_growth",
+        "value": 11.4,
+        "unit": "percent",
+        "confidence": 0.85,
+        "source": "Punjab Revenue Authority - Lahore Property Market Report Q1 2026",
+        "sourceType": "report",
+        "location": "Johar Town YoY growth rate",
+        "context": "Johar Town YoY growth rate"
+      },
+      {
+        "metric": "total_transactions",
+        "value": 45230,
+        "unit": "count",
+        "confidence": 0.9,
+        "source": "Punjab Revenue Authority - Lahore Property Market Report Q1 2026",
+        "sourceType": "report",
+        "location": "Total registered property transactions in Lahore 2025",
+        "context": "Total registered property transactions in Lahore 2025"
+      },
+      {
+        "metric": "transaction_volume_growth",
+        "value": 8.5,
+        "unit": "percent",
+        "confidence": 0.88,
+        "source": "Punjab Revenue Authority - Lahore Property Market Report Q1 2026",
+        "sourceType": "report",
+        "location": "Transaction volume increase over 2024",
+        "context": "Transaction volume increase over 2024"
+      },
+      {
+        "metric": "avg_transaction_value",
+        "value": 25000000,
+        "unit": "PKR",
+        "confidence": 0.87,
+        "source": "Punjab Revenue Authority - Lahore Property Market Report Q1 2026",
+        "sourceType": "report",
+        "location": "Average transaction value in Lahore",
+        "context": "Average transaction value in Lahore"
+      },
+      {
+        "metric": "avg_rental_yield_lahore",
+        "value": 2.5,
+        "unit": "percent",
+        "confidence": 0.83,
+        "source": "Punjab Revenue Authority - Lahore Property Market Report Q1 2026",
+        "sourceType": "report",
+        "location": "Average rental yield across all Lahore areas",
+        "context": "Average rental yield across all Lahore areas"
+      },
+      {
+        "metric": "new_housing_units_2025",
+        "value": 12500,
+        "unit": "count",
+        "confidence": 0.8,
+        "source": "Punjab Revenue Authority - Lahore Property Market Report Q1 2026",
+        "sourceType": "report",
+        "location": "New housing units delivered in Lahore in 2025",
+        "context": "New housing units delivered in Lahore in 2025"
+      },
+      {
+        "metric": "estimated_housing_demand",
+        "value": 18000,
+        "unit": "units_per_year",
+        "confidence": 0.75,
+        "source": "Punjab Revenue Authority - Lahore Property Market Report Q1 2026",
+        "sourceType": "report",
+        "location": "Estimated annual housing demand in Lahore",
+        "context": "Estimated annual housing demand in Lahore"
+      },
+      {
+        "metric": "expected_price_growth_2026",
+        "value": {
+          "min": 15,
+          "max": 18
+        },
+        "unit": "percent",
+        "confidence": 0.7,
+        "source": "Punjab Revenue Authority - Lahore Property Market Report Q1 2026",
+        "sourceType": "report",
+        "location": "Projected Lahore property price appreciation for 2026",
+        "context": "Projected Lahore property price appreciation for 2026"
+      },
+      {
+        "metric": "expected_total_return",
+        "value": {
+          "min": 17,
+          "max": 21
+        },
+        "unit": "percent",
+        "confidence": 0.7,
+        "source": "Punjab Revenue Authority - Lahore Property Market Report Q1 2026",
+        "sourceType": "report",
+        "location": "Expected total annual return (capital appreciation + rental yield)",
+        "context": "Expected total annual return (capital appreciation + rental yield)"
+      },
+      {
+        "metric": "latest_price_dha_phase_6",
+        "value": 18000000,
+        "unit": "PKR/marla",
+        "confidence": 0.93,
+        "source": "Lahore Property Prices - Historical Time Series",
+        "sourceType": "csv",
+        "location": "Lahore",
+        "context": "Latest average price per marla in DHA Phase 6 (2025-Q4) for Lahore"
+      },
+      {
+        "metric": "yoy_growth_dha_phase_6",
+        "value": 16.1,
+        "unit": "percent",
+        "confidence": 0.93,
+        "source": "Lahore Property Prices - Historical Time Series",
+        "sourceType": "csv",
+        "location": "Lahore",
+        "context": "Year-over-year price growth in DHA Phase 6 as of 2025-Q4 for Lahore"
+      },
+      {
+        "metric": "rental_yield_dha_phase_6",
+        "value": 1.9,
+        "unit": "percent",
+        "confidence": 0.93,
+        "source": "Lahore Property Prices - Historical Time Series",
+        "sourceType": "csv",
+        "location": "Lahore",
+        "context": "Current rental yield in DHA Phase 6 for Lahore"
+      },
+      {
+        "metric": "trend_dha_phase_6",
+        "value": "strongly_rising",
+        "unit": "trend",
+        "confidence": 0.93,
+        "source": "Lahore Property Prices - Historical Time Series",
+        "sourceType": "csv",
+        "location": "Lahore",
+        "context": "Price trend in DHA Phase 6: strongly_rising, momentum losing for Lahore"
+      },
+      {
+        "metric": "latest_price_bahria_town",
+        "value": 14000000,
+        "unit": "PKR/marla",
+        "confidence": 0.9,
+        "source": "Lahore Property Prices - Historical Time Series",
+        "sourceType": "csv",
+        "location": "Lahore",
+        "context": "Latest average price per marla in Bahria Town (2025-Q4) for Lahore"
+      },
+      {
+        "metric": "yoy_growth_bahria_town",
+        "value": 16.7,
+        "unit": "percent",
+        "confidence": 0.9,
+        "source": "Lahore Property Prices - Historical Time Series",
+        "sourceType": "csv",
+        "location": "Lahore",
+        "context": "Year-over-year price growth in Bahria Town as of 2025-Q4 for Lahore"
+      },
+      {
+        "metric": "rental_yield_bahria_town",
+        "value": 2.3,
+        "unit": "percent",
+        "confidence": 0.9,
+        "source": "Lahore Property Prices - Historical Time Series",
+        "sourceType": "csv",
+        "location": "Lahore",
+        "context": "Current rental yield in Bahria Town for Lahore"
+      },
+      {
+        "metric": "trend_bahria_town",
+        "value": "strongly_rising",
+        "unit": "trend",
+        "confidence": 0.9,
+        "source": "Lahore Property Prices - Historical Time Series",
+        "sourceType": "csv",
+        "location": "Lahore",
+        "context": "Price trend in Bahria Town: strongly_rising, momentum gaining for Lahore"
+      },
+      {
+        "metric": "latest_price_gulberg",
+        "value": 22000000,
+        "unit": "PKR/marla",
+        "confidence": 0.87,
+        "source": "Lahore Property Prices - Historical Time Series",
+        "sourceType": "csv",
+        "location": "Lahore",
+        "context": "Latest average price per marla in Gulberg (2025-Q1) for Lahore"
+      },
+      {
+        "metric": "yoy_growth_gulberg",
+        "value": 10,
+        "unit": "percent",
+        "confidence": 0.87,
+        "source": "Lahore Property Prices - Historical Time Series",
+        "sourceType": "csv",
+        "location": "Lahore",
+        "context": "Year-over-year price growth in Gulberg as of 2025-Q1 for Lahore"
+      },
+      {
+        "metric": "rental_yield_gulberg",
+        "value": 1.6,
+        "unit": "percent",
+        "confidence": 0.87,
+        "source": "Lahore Property Prices - Historical Time Series",
+        "sourceType": "csv",
+        "location": "Lahore",
+        "context": "Current rental yield in Gulberg for Lahore"
+      },
+      {
+        "metric": "trend_gulberg",
+        "value": "rising",
+        "unit": "trend",
+        "confidence": 0.87,
+        "source": "Lahore Property Prices - Historical Time Series",
+        "sourceType": "csv",
+        "location": "Lahore",
+        "context": "Price trend in Gulberg: rising, momentum gaining for Lahore"
+      },
+      {
+        "metric": "latest_price_johar_town",
+        "value": 7800000,
+        "unit": "PKR/marla",
+        "confidence": 0.85,
+        "source": "Lahore Property Prices - Historical Time Series",
+        "sourceType": "csv",
+        "location": "Lahore",
+        "context": "Latest average price per marla in Johar Town (2025-Q1) for Lahore"
+      },
+      {
+        "metric": "yoy_growth_johar_town",
+        "value": 11.4,
+        "unit": "percent",
+        "confidence": 0.85,
+        "source": "Lahore Property Prices - Historical Time Series",
+        "sourceType": "csv",
+        "location": "Lahore",
+        "context": "Year-over-year price growth in Johar Town as of 2025-Q1 for Lahore"
+      },
+      {
+        "metric": "rental_yield_johar_town",
+        "value": 3.3,
+        "unit": "percent",
+        "confidence": 0.85,
+        "source": "Lahore Property Prices - Historical Time Series",
+        "sourceType": "csv",
+        "location": "Lahore",
+        "context": "Current rental yield in Johar Town for Lahore"
+      },
+      {
+        "metric": "trend_johar_town",
+        "value": "rising",
+        "unit": "trend",
+        "confidence": 0.85,
+        "source": "Lahore Property Prices - Historical Time Series",
+        "sourceType": "csv",
+        "location": "Lahore",
+        "context": "Price trend in Johar Town: rising, momentum losing for Lahore"
+      },
+      {
+        "metric": "latest_price_model_town",
+        "value": 18000000,
+        "unit": "PKR/marla",
+        "confidence": 0.87,
+        "source": "Lahore Property Prices - Historical Time Series",
+        "sourceType": "csv",
+        "location": "Lahore",
+        "context": "Latest average price per marla in Model Town (2025-Q1) for Lahore"
+      },
+      {
+        "metric": "yoy_growth_model_town",
+        "value": 9.1,
+        "unit": "percent",
+        "confidence": 0.87,
+        "source": "Lahore Property Prices - Historical Time Series",
+        "sourceType": "csv",
+        "location": "Lahore",
+        "context": "Year-over-year price growth in Model Town as of 2025-Q1 for Lahore"
+      },
+      {
+        "metric": "rental_yield_model_town",
+        "value": 1.7,
+        "unit": "percent",
+        "confidence": 0.87,
+        "source": "Lahore Property Prices - Historical Time Series",
+        "sourceType": "csv",
+        "location": "Lahore",
+        "context": "Current rental yield in Model Town for Lahore"
+      },
+      {
+        "metric": "trend_model_town",
+        "value": "rising",
+        "unit": "trend",
+        "confidence": 0.87,
+        "source": "Lahore Property Prices - Historical Time Series",
+        "sourceType": "csv",
+        "location": "Lahore",
+        "context": "Price trend in Model Town: rising, momentum losing for Lahore"
+      },
+      {
+        "metric": "reit_return_1y_reit-dcr",
+        "value": 12.5,
+        "unit": "percent",
+        "confidence": 0.88,
+        "source": "Pakistan Investment Dashboard - Q1 2026",
+        "sourceType": "json",
+        "location": "Dolmen City REIT: 1-year annualized return",
+        "context": "Dolmen City REIT: 1-year annualized return"
+      },
+      {
+        "metric": "risk_score_reit-dcr",
+        "value": 0.45,
+        "unit": "score_0_to_1",
+        "confidence": 0.85,
+        "source": "Pakistan Investment Dashboard - Q1 2026",
+        "sourceType": "json",
+        "location": "Dolmen City REIT: Risk score (0 = low risk, 1 = high risk)",
+        "context": "Dolmen City REIT: Risk score (0 = low risk, 1 = high risk)"
+      },
+      {
+        "metric": "reit_return_1y_reit-akdrf",
+        "value": 10.1,
+        "unit": "percent",
+        "confidence": 0.88,
+        "source": "Pakistan Investment Dashboard - Q1 2026",
+        "sourceType": "json",
+        "location": "AKD REIT Fund: 1-year annualized return",
+        "context": "AKD REIT Fund: 1-year annualized return"
+      },
+      {
+        "metric": "risk_score_reit-akdrf",
+        "value": 0.52,
+        "unit": "score_0_to_1",
+        "confidence": 0.85,
+        "source": "Pakistan Investment Dashboard - Q1 2026",
+        "sourceType": "json",
+        "location": "AKD REIT Fund: Risk score (0 = low risk, 1 = high risk)",
+        "context": "AKD REIT Fund: Risk score (0 = low risk, 1 = high risk)"
+      },
+      {
+        "metric": "mutual_fund_return_1y_mf-nbp-islamic-stock-fund",
+        "value": 28.5,
+        "unit": "percent",
+        "confidence": 0.88,
+        "source": "Pakistan Investment Dashboard - Q1 2026",
+        "sourceType": "json",
+        "location": "NBP Islamic Stock Fund: 1-year annualized return",
+        "context": "NBP Islamic Stock Fund: 1-year annualized return"
+      },
+      {
+        "metric": "risk_score_mf-nbp-islamic-stock-fund",
+        "value": 0.72,
+        "unit": "score_0_to_1",
+        "confidence": 0.85,
+        "source": "Pakistan Investment Dashboard - Q1 2026",
+        "sourceType": "json",
+        "location": "NBP Islamic Stock Fund: Risk score (0 = low risk, 1 = high risk)",
+        "context": "NBP Islamic Stock Fund: Risk score (0 = low risk, 1 = high risk)"
+      },
+      {
+        "metric": "mutual_fund_return_1y_mf-al-meezan-income-fund",
+        "value": 18.2,
+        "unit": "percent",
+        "confidence": 0.88,
+        "source": "Pakistan Investment Dashboard - Q1 2026",
+        "sourceType": "json",
+        "location": "Al Meezan Income Fund: 1-year annualized return",
+        "context": "Al Meezan Income Fund: 1-year annualized return"
+      },
+      {
+        "metric": "risk_score_mf-al-meezan-income-fund",
+        "value": 0.35,
+        "unit": "score_0_to_1",
+        "confidence": 0.85,
+        "source": "Pakistan Investment Dashboard - Q1 2026",
+        "sourceType": "json",
+        "location": "Al Meezan Income Fund: Risk score (0 = low risk, 1 = high risk)",
+        "context": "Al Meezan Income Fund: Risk score (0 = low risk, 1 = high risk)"
+      },
+      {
+        "metric": "mutual_fund_return_1y_mf-hbl-multi-asset-fund",
+        "value": 22,
+        "unit": "percent",
+        "confidence": 0.88,
+        "source": "Pakistan Investment Dashboard - Q1 2026",
+        "sourceType": "json",
+        "location": "HBL Multi Asset Fund: 1-year annualized return",
+        "context": "HBL Multi Asset Fund: 1-year annualized return"
+      },
+      {
+        "metric": "risk_score_mf-hbl-multi-asset-fund",
+        "value": 0.55,
+        "unit": "score_0_to_1",
+        "confidence": 0.85,
+        "source": "Pakistan Investment Dashboard - Q1 2026",
+        "sourceType": "json",
+        "location": "HBL Multi Asset Fund: Risk score (0 = low risk, 1 = high risk)",
+        "context": "HBL Multi Asset Fund: Risk score (0 = low risk, 1 = high risk)"
+      },
+      {
+        "metric": "government_bond_return_1y_bond-pib-10y",
+        "value": 15.2,
+        "unit": "percent",
+        "confidence": 0.88,
+        "source": "Pakistan Investment Dashboard - Q1 2026",
+        "sourceType": "json",
+        "location": "Pakistan Investment Bonds (PIB) - 10Y: 1-year annualized return",
+        "context": "Pakistan Investment Bonds (PIB) - 10Y: 1-year annualized return"
+      },
+      {
+        "metric": "risk_score_bond-pib-10y",
+        "value": 0.15,
+        "unit": "score_0_to_1",
+        "confidence": 0.85,
+        "source": "Pakistan Investment Dashboard - Q1 2026",
+        "sourceType": "json",
+        "location": "Pakistan Investment Bonds (PIB) - 10Y: Risk score (0 = low risk, 1 = high risk)",
+        "context": "Pakistan Investment Bonds (PIB) - 10Y: Risk score (0 = low risk, 1 = high risk)"
+      },
+      {
+        "metric": "government_bond_return_1y_bond-pib-5y",
+        "value": 14.5,
+        "unit": "percent",
+        "confidence": 0.88,
+        "source": "Pakistan Investment Dashboard - Q1 2026",
+        "sourceType": "json",
+        "location": "Pakistan Investment Bonds (PIB) - 5Y: 1-year annualized return",
+        "context": "Pakistan Investment Bonds (PIB) - 5Y: 1-year annualized return"
+      },
+      {
+        "metric": "risk_score_bond-pib-5y",
+        "value": 0.18,
+        "unit": "score_0_to_1",
+        "confidence": 0.85,
+        "source": "Pakistan Investment Dashboard - Q1 2026",
+        "sourceType": "json",
+        "location": "Pakistan Investment Bonds (PIB) - 5Y: Risk score (0 = low risk, 1 = high risk)",
+        "context": "Pakistan Investment Bonds (PIB) - 5Y: Risk score (0 = low risk, 1 = high risk)"
+      },
+      {
+        "metric": "cryptocurrency_return_1y_crypto-btc",
+        "value": 85,
+        "unit": "percent",
+        "confidence": 0.88,
+        "source": "Pakistan Investment Dashboard - Q1 2026",
+        "sourceType": "json",
+        "location": "Bitcoin: 1-year annualized return",
+        "context": "Bitcoin: 1-year annualized return"
+      },
+      {
+        "metric": "risk_score_crypto-btc",
+        "value": 0.92,
+        "unit": "score_0_to_1",
+        "confidence": 0.85,
+        "source": "Pakistan Investment Dashboard - Q1 2026",
+        "sourceType": "json",
+        "location": "Bitcoin: Risk score (0 = low risk, 1 = high risk)",
+        "context": "Bitcoin: Risk score (0 = low risk, 1 = high risk)"
+      },
+      {
+        "metric": "cryptocurrency_return_1y_crypto-eth",
+        "value": 62,
+        "unit": "percent",
+        "confidence": 0.88,
+        "source": "Pakistan Investment Dashboard - Q1 2026",
+        "sourceType": "json",
+        "location": "Ethereum: 1-year annualized return",
+        "context": "Ethereum: 1-year annualized return"
+      },
+      {
+        "metric": "risk_score_crypto-eth",
+        "value": 0.88,
+        "unit": "score_0_to_1",
+        "confidence": 0.85,
+        "source": "Pakistan Investment Dashboard - Q1 2026",
+        "sourceType": "json",
+        "location": "Ethereum: Risk score (0 = low risk, 1 = high risk)",
+        "context": "Ethereum: Risk score (0 = low risk, 1 = high risk)"
+      },
+      {
+        "metric": "market_sentiment_overall",
+        "value": "cautiously_optimistic",
+        "unit": "sentiment",
+        "confidence": 0.8,
+        "source": "Pakistan Investment Dashboard - Q1 2026",
+        "sourceType": "json",
+        "location": "Overall market sentiment from PSX analytics",
+        "context": "Overall market sentiment from PSX analytics"
+      },
+      {
+        "metric": "market_key_factors",
+        "value": [
+          "SBP rate cuts expected in Q2 2026",
+          "IMF program on track",
+          "Political stability improved",
+          "Inflation trending down from 25% to 12%",
+          "Property market shows regional divergence"
+        ],
+        "unit": "factors",
+        "confidence": 0.8,
+        "source": "Pakistan Investment Dashboard - Q1 2026",
+        "sourceType": "json",
+        "location": "Key market factors influencing investment outlook",
+        "context": "Key market factors influencing investment outlook"
+      },
+      {
+        "metric": "overall_property_price_growth",
+        "value": 8,
+        "unit": "percent",
+        "confidence": 0.6,
+        "source": "Lahore Property Market Shows Signs of Cooling - Pakistan Real Estate Weekly",
+        "sourceType": "html",
+        "location": "Article claims Lahore property growth has slowed to ~8% YoY, citing independent analysis",
+        "context": "Article claims Lahore property growth has slowed to ~8% YoY, citing independent analysis"
+      },
+      {
+        "metric": "property_price_growth_yoy",
+        "value": 8.2,
+        "unit": "percent",
+        "confidence": 0.58,
+        "source": "Lahore Property Market Shows Signs of Cooling - Pakistan Real Estate Weekly",
+        "sourceType": "html",
+        "location": "DHA Phase 6 grew only 8.2% YoY in Q4 2025, down from 19.2% in Q4 2024",
+        "context": "DHA Phase 6 grew only 8.2% YoY in Q4 2025, down from 19.2% in Q4 2024"
+      },
+      {
+        "metric": "transaction_volume_change",
+        "value": -12,
+        "unit": "percent",
+        "confidence": 0.55,
+        "source": "Lahore Property Market Shows Signs of Cooling - Pakistan Real Estate Weekly",
+        "sourceType": "html",
+        "location": "Transaction volumes declined by 12% compared to same period last year",
+        "context": "Transaction volumes declined by 12% compared to same period last year"
+      },
+      {
+        "metric": "avg_rental_yield_premium",
+        "value": 2,
+        "unit": "percent",
+        "confidence": 0.55,
+        "source": "Lahore Property Market Shows Signs of Cooling - Pakistan Real Estate Weekly",
+        "sourceType": "html",
+        "location": "Rental yields compressed to 2.0% across premium locations",
+        "context": "Rental yields compressed to 2.0% across premium locations"
+      },
+      {
+        "metric": "housing_supply_increase",
+        "value": 25,
+        "unit": "percent",
+        "confidence": 0.5,
+        "source": "Lahore Property Market Shows Signs of Cooling - Pakistan Real Estate Weekly",
+        "sourceType": "html",
+        "location": "New housing supply increased by 25% as developers complete delayed projects",
+        "context": "New housing supply increased by 25% as developers complete delayed projects"
+      },
+      {
+        "metric": "bahria_town_price_growth",
+        "value": 10.5,
+        "unit": "percent",
+        "confidence": 0.55,
+        "source": "Lahore Property Market Shows Signs of Cooling - Pakistan Real Estate Weekly",
+        "sourceType": "html",
+        "location": "Bahria Town Lahore shows 10.5% growth per article analysis",
+        "context": "Bahria Town Lahore shows 10.5% growth per article analysis"
+      },
+      {
+        "metric": "borrowing_cost",
+        "value": 17.5,
+        "unit": "percent",
+        "confidence": 0.8,
+        "source": "Lahore Property Market Shows Signs of Cooling - Pakistan Real Estate Weekly",
+        "sourceType": "html",
+        "location": "Borrowing costs remain elevated at 17.5%",
+        "context": "Borrowing costs remain elevated at 17.5%"
+      },
+      {
+        "metric": "expected_property_growth_2026_2028",
+        "value": {
+          "min": 6,
+          "max": 8
+        },
+        "unit": "percent",
+        "confidence": 0.45,
+        "source": "Lahore Property Market Shows Signs of Cooling - Pakistan Real Estate Weekly",
+        "sourceType": "html",
+        "location": "Article predicts 6-8% annual growth, below inflation (negative real return)",
+        "context": "Article predicts 6-8% annual growth, below inflation (negative real return)"
+      },
+      {
+        "metric": "inventory_increase",
+        "value": 30,
+        "unit": "percent",
+        "confidence": 0.5,
+        "source": "Lahore Property Market Shows Signs of Cooling - Pakistan Real Estate Weekly",
+        "sourceType": "html",
+        "location": "New apartment complexes in DHA and Bahria increased inventory by 30%",
+        "context": "New apartment complexes in DHA and Bahria increased inventory by 30%"
+      },
+      {
+        "metric": "sentiment_property_lahore",
+        "value": "negative",
+        "unit": "sentiment",
+        "confidence": 0.75,
+        "source": "MarketPulse Pakistan Live Feed",
+        "sourceType": "feed",
+        "location": "Feed sentiment: DHA Phase 6 sees 15% drop in buyer inquiries this month",
+        "context": "Feed sentiment: DHA Phase 6 sees 15% drop in buyer inquiries this month"
+      },
+      {
+        "metric": "avg_price_dha6_per_marla",
+        "value": 18500000,
+        "unit": "PKR",
+        "confidence": 0.8,
+        "source": "MarketPulse Pakistan Live Feed",
+        "sourceType": "feed",
+        "location": "Feed: avg_price_dha6_per_marla (monthly)",
+        "context": "Feed: avg_price_dha6_per_marla (monthly)"
+      },
+      {
+        "metric": "market_event_policy",
+        "value": "positive",
+        "unit": "event",
+        "confidence": 0.85,
+        "source": "MarketPulse Pakistan Live Feed",
+        "sourceType": "feed",
+        "location": "Market event: SBP signals further rate cuts in upcoming MPC meeting",
+        "context": "Market event: SBP signals further rate cuts in upcoming MPC meeting"
+      },
+      {
+        "metric": "sentiment_equity_pakistan",
+        "value": "bullish",
+        "unit": "sentiment",
+        "confidence": 0.9,
+        "source": "MarketPulse Pakistan Live Feed",
+        "sourceType": "feed",
+        "location": "Feed sentiment: PSX index crosses 85,000 milestone for first time",
+        "context": "Feed sentiment: PSX index crosses 85,000 milestone for first time"
+      },
+      {
+        "metric": "pib_10y_yield",
+        "value": 15.2,
+        "unit": "percent",
+        "confidence": 0.92,
+        "source": "MarketPulse Pakistan Live Feed",
+        "sourceType": "feed",
+        "location": "Feed: pib_10y_yield (weekly)",
+        "context": "Feed: pib_10y_yield (weekly)"
+      },
+      {
+        "metric": "sentiment_property_lahore",
+        "value": "positive",
+        "unit": "sentiment",
+        "confidence": 0.78,
+        "source": "MarketPulse Pakistan Live Feed",
+        "sourceType": "feed",
+        "location": "Feed sentiment: New metro line extension boosts property values in Johar Town corridor",
+        "context": "Feed sentiment: New metro line extension boosts property values in Johar Town corridor"
+      },
+      {
+        "metric": "avg_price_dha6_per_marla",
+        "value": 19200000,
+        "unit": "PKR",
+        "confidence": 0.6,
+        "source": "MarketPulse Pakistan Live Feed",
+        "sourceType": "feed",
+        "location": "Feed: avg_price_dha6_per_marla (yearly)",
+        "context": "Feed: avg_price_dha6_per_marla (yearly)"
+      },
+      {
+        "metric": "sentiment_mutual_funds_pakistan",
+        "value": "positive",
+        "unit": "sentiment",
+        "confidence": 0.82,
+        "source": "MarketPulse Pakistan Live Feed",
+        "sourceType": "feed",
+        "location": "Feed sentiment: Islamic equity funds outperform conventional peers by 5% in 2025",
+        "context": "Feed sentiment: Islamic equity funds outperform conventional peers by 5% in 2025"
+      }
+    ]
+  }
+}

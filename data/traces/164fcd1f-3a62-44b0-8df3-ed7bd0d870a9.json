@@ -1,0 +1,143 @@
+{
+  "sessionId": "164fcd1f-3a62-44b0-8df3-ed7bd0d870a9",
+  "createdAt": "2026-05-20T19:01:12.597Z",
+  "completedAt": "2026-05-20T19:01:17.843Z",
+  "summary": {
+    "totalSteps": 5,
+    "totalDecisions": 1,
+    "totalToolCalls": 7,
+    "totalFailures": 0,
+    "recoveredFailures": 0
+  },
+  "workplan": {
+    "0": "Ingest all 5 data sources",
+    "1": "Normalize data schemas",
+    "2": "Filter noise and stale data",
+    "3": "Detect contradictions across sources",
+    "4": "Extract insights",
+    "5": "Rank investment options",
+    "6": "Simulate action chain execution",
+    "setAt": "2026-05-20T19:01:12.598Z"
+  },
+  "steps": [
+    {
+      "id": "step-1",
+      "timestamp": "2026-05-20T19:01:14.313Z",
+      "phase": "ingestion",
+      "action": "Live News Scraper",
+      "details": "Scraped 5 real-time headlines for Lahore.",
+      "status": "success",
+      "duration": null
+    },
+    {
+      "id": "step-2",
+      "timestamp": "2026-05-20T19:01:15.725Z",
+      "phase": "ingestion",
+      "action": "Zameen Scraper",
+      "details": "Scraped 25 real-time property listings from Zameen.com for Lahore.",
+      "status": "success",
+      "duration": null
+    },
+    {
+      "id": "step-3",
+      "timestamp": "2026-05-20T19:01:17.842Z",
+      "phase": "ingestion",
+      "action": "Graana Scraper",
+      "details": "Scraped 12 real-time property listings from Graana.com for Lahore.",
+      "status": "success",
+      "duration": null
+    },
+    {
+      "id": "step-4",
+      "timestamp": "2026-05-20T19:01:17.843Z",
+      "phase": "normalization",
+      "action": "Data Normalization",
+      "details": "Converted heterogeneous sources to unified schema.",
+      "status": "success",
+      "duration": null
+    },
+    {
+      "id": "step-5",
+      "timestamp": "2026-05-20T19:01:17.843Z",
+      "phase": "action",
+      "action": "Simulation Complete",
+      "details": "Executed 6 steps with 1 recovery.",
+      "status": "success",
+      "duration": null
+    }
+  ],
+  "decisions": [
+    {
+      "id": "decision-1",
+      "timestamp": "2026-05-20T19:01:17.843Z",
+      "question": "Handle property growth contradiction",
+      "options": [
+        "Use 18% (PRA)",
+        "Use 8% (Article)",
+        "Average (13%)",
+        "Weight by Credibility"
+      ],
+      "chosen": "Weight by Credibility",
+      "reasoning": "PRA has higher credibility score. Resolution favors official data while acknowledging market sentiment."
+    }
+  ],
+  "toolCalls": [
+    {
+      "id": "tool-1",
+      "timestamp": "2026-05-20T19:01:12.601Z",
+      "tool": "pdfParser",
+      "input": "property_report.txt",
+      "outputSummary": "8 keys returned",
+      "duration": "120ms"
+    },
+    {
+      "id": "tool-2",
+      "timestamp": "2026-05-20T19:01:12.603Z",
+      "tool": "csvParser",
+      "input": "property_prices.csv",
+      "outputSummary": "10 keys returned",
+      "duration": "85ms"
+    },
+    {
+      "id": "tool-3",
+      "timestamp": "2026-05-20T19:01:12.606Z",
+      "tool": "jsonParser",
+      "input": "reit_dashboard.json",
+      "outputSummary": "9 keys returned",
+      "duration": "40ms"
+    },
+    {
+      "id": "tool-4",
+      "timestamp": "2026-05-20T19:01:12.621Z",
+      "tool": "htmlParser",
+      "input": "market_article.html",
+      "outputSummary": "8 keys returned",
+      "duration": "60ms"
+    },
+    {
+      "id": "tool-5",
+      "timestamp": "2026-05-20T19:01:14.313Z",
+      "tool": "liveScraper",
+      "input": "Google News RSS",
+      "outputSummary": "4 keys returned",
+      "duration": "450ms"
+    },
+    {
+      "id": "tool-6",
+      "timestamp": "2026-05-20T19:01:15.725Z",
+      "tool": "zameenScraper",
+      "input": "Zameen.com Scraper",
+      "outputSummary": "5 keys returned",
+      "duration": "500ms"
+    },
+    {
+      "id": "tool-7",
+      "timestamp": "2026-05-20T19:01:17.842Z",
+      "tool": "graanaScraper",
+      "input": "Graana.com Scraper",
+      "outputSummary": "5 keys returned",
+      "duration": "500ms"
+    }
+  ],
+  "failures": []
+}

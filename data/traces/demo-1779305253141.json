@@ -1,0 +1,60 @@
+{
+  "sessionId": "demo-1779305253141",
+  "workplan": {
+    "0": "Ingest multi-source content",
+    "1": "Detect contradictions and constraints",
+    "2": "Plan 3-5 connected actions",
+    "3": "Execute and recover failures",
+    "setAt": "2026-05-20T19:27:33.141Z"
+  },
+  "steps": [
+    {
+      "id": "step-1",
+      "timestamp": "2026-05-20T19:27:33.141Z",
+      "phase": "action",
+      "action": "PLAN",
+      "details": "Action cost estimated",
+      "status": "success"
+    },
+    {
+      "id": "step-2",
+      "timestamp": "2026-05-20T19:27:33.141Z",
+      "phase": "action",
+      "action": "CONSTRAINT_CHECK",
+      "details": "Infeasible actions rejected",
+      "status": "success"
+    },
+    {
+      "id": "step-3",
+      "timestamp": "2026-05-20T19:27:33.141Z",
+      "phase": "action",
+      "action": "REPLAN",
+      "details": "Feasible lower-cost chain selected",
+      "status": "success"
+    }
+  ],
+  "decisions": [
+    {
+      "id": "decision-1",
+      "timestamp": "2026-05-20T19:27:33.141Z",
+      "question": "Select scenario strategy",
+      "options": [
+        "strict constraints",
+        "balanced"
+      ],
+      "chosen": "strict constraints",
+      "reasoning": "Preferred auditable and feasible chain."
+    }
+  ],
+  "toolCalls": [
+    {
+      "id": "tool-1",
+      "timestamp": "2026-05-20T19:27:33.141Z",
+      "tool": "scenarioEngine",
+      "input": "budget-violation",
+      "outputSummary": "Scenario simulated",
+      "duration": "45ms"
+    }
+  ],
+  "failures": []
+}

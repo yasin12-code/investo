@@ -1,0 +1,171 @@
+{
+  "dashboard_meta": {
+    "title": "Pakistan Investment Dashboard - Q1 2026",
+    "generated_at": "2026-01-15T09:30:00Z",
+    "source": "PSX Market Analytics",
+    "credibility": 0.88,
+    "data_freshness": "2026-01-15"
+  },
+  "reit_funds": [
+    {
+      "name": "Dolmen City REIT",
+      "ticker": "DCR",
+      "type": "REIT",
+      "current_price_pkr": 32.50,
+      "nav_per_unit": 38.20,
+      "dividend_yield_pct": 7.8,
+      "annualized_return_1y_pct": 12.5,
+      "annualized_return_3y_pct": 9.8,
+      "annualized_return_5y_pct": 8.2,
+      "risk_score": 0.45,
+      "liquidity_score": 0.82,
+      "market_cap_billion_pkr": 18.5,
+      "occupancy_rate_pct": 94.2,
+      "property_type": "Commercial Mall",
+      "location": "Karachi",
+      "last_updated": "2026-01-14T16:00:00Z"
+    },
+    {
+      "name": "AKD REIT Fund",
+      "ticker": "AKDRF",
+      "type": "REIT",
+      "current_price_pkr": 15.80,
+      "nav_per_unit": 18.90,
+      "dividend_yield_pct": 6.2,
+      "annualized_return_1y_pct": 10.1,
+      "annualized_return_3y_pct": 7.5,
+      "annualized_return_5y_pct": 6.8,
+      "risk_score": 0.52,
+      "liquidity_score": 0.65,
+      "market_cap_billion_pkr": 5.2,
+      "occupancy_rate_pct": 88.5,
+      "property_type": "Mixed Use",
+      "location": "Lahore",
+      "last_updated": "2026-01-14T16:00:00Z"
+    }
+  ],
+  "mutual_funds": [
+    {
+      "name": "NBP Islamic Stock Fund",
+      "amc": "NBP Fund Management",
+      "type": "Equity Fund",
+      "nav_pkr": 22.45,
+      "annualized_return_1y_pct": 28.5,
+      "annualized_return_3y_pct": 18.2,
+      "annualized_return_5y_pct": 14.5,
+      "risk_score": 0.72,
+      "expense_ratio_pct": 2.1,
+      "min_investment_pkr": 5000,
+      "liquidity_score": 0.90,
+      "fund_size_billion_pkr": 12.8,
+      "sharpe_ratio": 1.35,
+      "last_updated": "2026-01-14T16:00:00Z"
+    },
+    {
+      "name": "Al Meezan Income Fund",
+      "amc": "Al Meezan Investment",
+      "type": "Income Fund",
+      "nav_pkr": 58.30,
+      "annualized_return_1y_pct": 18.2,
+      "annualized_return_3y_pct": 14.8,
+      "annualized_return_5y_pct": 12.5,
+      "risk_score": 0.35,
+      "expense_ratio_pct": 1.5,
+      "min_investment_pkr": 1000,
+      "liquidity_score": 0.95,
+      "fund_size_billion_pkr": 45.2,
+      "sharpe_ratio": 1.62,
+      "last_updated": "2026-01-14T16:00:00Z"
+    },
+    {
+      "name": "HBL Multi Asset Fund",
+      "amc": "HBL Asset Management",
+      "type": "Balanced Fund",
+      "nav_pkr": 15.20,
+      "annualized_return_1y_pct": 22.0,
+      "annualized_return_3y_pct": 15.5,
+      "annualized_return_5y_pct": 12.0,
+      "risk_score": 0.55,
+      "expense_ratio_pct": 1.8,
+      "min_investment_pkr": 10000,
+      "liquidity_score": 0.88,
+      "fund_size_billion_pkr": 8.5,
+      "sharpe_ratio": 1.45,
+      "last_updated": "2026-01-14T16:00:00Z"
+    }
+  ],
+  "government_bonds": [
+    {
+      "name": "Pakistan Investment Bonds (PIB) - 10Y",
+      "type": "Government Bond",
+      "tenor_years": 10,
+      "coupon_rate_pct": 14.5,
+      "current_yield_pct": 15.2,
+      "risk_score": 0.15,
+      "min_investment_pkr": 100000,
+      "liquidity_score": 0.70,
+      "credit_rating": "B-",
+      "last_updated": "2026-01-14T16:00:00Z"
+    },
+    {
+      "name": "Pakistan Investment Bonds (PIB) - 5Y",
+      "type": "Government Bond",
+      "tenor_years": 5,
+      "coupon_rate_pct": 13.8,
+      "current_yield_pct": 14.5,
+      "risk_score": 0.18,
+      "min_investment_pkr": 100000,
+      "liquidity_score": 0.72,
+      "credit_rating": "B-",
+      "last_updated": "2026-01-14T16:00:00Z"
+    }
+  ],
+  "crypto": [
+    {
+      "name": "Bitcoin",
+      "ticker": "BTC",
+      "price_usd": 105000,
+      "price_pkr": 29400000,
+      "annualized_return_1y_pct": 85.0,
+      "annualized_return_3y_pct": 35.0,
+      "annualized_return_5y_pct": 42.0,
+      "risk_score": 0.92,
+      "volatility_30d_pct": 18.5,
+      "liquidity_score": 0.98,
+      "market_cap_trillion_usd": 2.1,
+      "regulatory_risk": "high",
+      "legal_status_pakistan": "unregulated",
+      "last_updated": "2026-01-15T09:00:00Z"
+    },
+    {
+      "name": "Ethereum",
+      "ticker": "ETH",
+      "price_usd": 4200,
+      "price_pkr": 1176000,
+      "annualized_return_1y_pct": 62.0,
+      "annualized_return_3y_pct": 22.0,
+      "annualized_return_5y_pct": 55.0,
+      "risk_score": 0.88,
+      "volatility_30d_pct": 22.0,
+      "liquidity_score": 0.95,
+      "market_cap_trillion_usd": 0.5,
+      "regulatory_risk": "high",
+      "legal_status_pakistan": "unregulated",
+      "last_updated": "2026-01-15T09:00:00Z"
+    }
+  ],
+  "market_sentiment": {
+    "overall": "cautiously_optimistic",
+    "property_sector": "mixed",
+    "equity_market": "bullish",
+    "bond_market": "stable",
+    "crypto_market": "volatile_bullish",
+    "key_factors": [
+      "SBP rate cuts expected in Q2 2026",
+      "IMF program on track",
+      "Political stability improved",
+      "Inflation trending down from 25% to 12%",
+      "Property market shows regional divergence"
+    ]
+  }
+}

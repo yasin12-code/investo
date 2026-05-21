@@ -1,0 +1,118 @@
+".trace-viewer {
+  background: #0d1117;
+  border: 1px solid #30363d;
+  border-radius: var(--radius-md);
+  font-family: 'Consolas', 'Monaco', monospace;
+  font-size: 0.85rem;
+  color: #c9d1d9;
+  overflow: hidden;
+  margin-top: 1rem;
+}
+
+.trace-header {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 1rem;
+  background: #161b22;
+  border-bottom: 1px solid #30363d;
+}
+
+.trace-header h3 {
+  margin: 0;
+  font-family: var(--font-family);
+  font-size: 1rem;
+  font-weight: 600;
+  color: #e6edf3;
+  flex: 1;
+}
+
+.trace-id {
+  color: #8b949e;
+  font-size: 0.8rem;
+}
+
+.trace-search {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.75rem 1rem;
+  border-bottom: 1px solid #30363d;
+  background: #0d1117;
+}
+
+.trace-search input {
+  background: transparent;
+  border: none;
+  color: #c9d1d9;
+  font-family: var(--font-family);
+  font-size: 0.85rem;
+  width: 100%;
+  outline: none;
+}
+
+.trace-content {
+  padding: 0.5rem 0;
+}
+
+.trace-section {
+  border-bottom: 1px solid #21262d;
+}
+
+.trace-section:last-child {
+  border-bottom: none;
+}
+
+.trace-section-header {
+  padding: 0.75rem 1rem;
+  cursor: pointer;
+  user-select: none;
+}
+
+.trace-section-header:hover {
+  background: #161b22;
+}
+
+.trace-section-title {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-family: var(--font-family);
+  font-weight: 500;
+  color: #e6edf3;
+}
+
+.icon-decisions { color: #a371f7; }
+.icon-failures { color: #f85149; }
+.icon-workplan { color: #3fb950; }
+
+.trace-count-badge {
+  background: #21262d;
+  padding: 0.1rem 0.4rem;
+  border-radius: 10px;
+  font-size: 0.75rem;
+  margin-left: auto;
+}
+
+.trace-section-body {
+  padding: 0.5rem 1rem 1rem 2.5rem;
+}
+
+.trace-workplan-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.trace-workplan-list li {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: #8b949e;
+}
+
+.trace-workplan-list li svg 
+<truncated 866 bytes>

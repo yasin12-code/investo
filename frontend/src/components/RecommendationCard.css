@@ -1,0 +1,90 @@
+".recommendation-card {
+  background: var(--bg-card);
+  border: 1px solid var(--border-glass);
+  backdrop-filter: blur(10px);
+  border-radius: var(--radius-lg);
+  padding: 1.5rem;
+  margin-bottom: 1rem;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.recommendation-card:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-glow);
+}
+
+.recommendation-card::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0; right: 0; height: 3px;
+  background: var(--gradient-primary);
+  opacity: 0.5;
+}
+
+.recommendation-card.rank-1::before {
+  background: var(--gradient-success);
+  opacity: 1;
+}
+
+.rec-header {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.rec-rank {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: var(--gradient-primary);
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  font-size: 1.25rem;
+  flex-shrink: 0;
+}
+
+.rank-1 .rec-rank {
+  background: var(--gradient-success);
+}
+
+.rec-title-area h3 {
+  margin: 0 0 0.25rem 0;
+  font-size: 1.25rem;
+  color: var(--text-primary);
+}
+
+.badge {
+  font-size: 0.75rem;
+  padding: 0.25rem 0.5rem;
+  border-radius: var(--radius-sm);
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.badge.type-property { background: rgba(99, 102, 241, 0.2); color: #818cf8; }
+.badge.type-reit { background: rgba(16, 185, 129, 0.2); color: #34d399; }
+.badge.type-fund { background: rgba(245, 158, 11, 0.2); color: #fbbf24; }
+.badge.type-bond { background: rgba(139, 92, 246, 0.2); color: #a78bfa; }
+.badge.type-crypto { background: rgba(239, 68, 68, 0.2); color: #f87171; }
+
+.rec-metrics {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+  padding: 1rem;
+  background: rgba(0, 0, 0, 0.2);
+  border-radius: var(--radius-md);
+}
+
+.metric {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem
+<truncated 2077 bytes>

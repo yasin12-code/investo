@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+    <string name="app_name">Investo</string>
+    <string name="title_activity_main">Investo</string>
+    <string name="package_name">com.uit.investo</string>
+    <string name="custom_url_scheme">com.uit.investo</string>
+</resources>

@@ -1,0 +1,77 @@
+{
+  "sessionId": "demo-1779305259233",
+  "workplan": {
+    "0": "Ingest multi-source content",
+    "1": "Detect contradictions and constraints",
+    "2": "Plan 3-5 connected actions",
+    "3": "Execute and recover failures",
+    "setAt": "2026-05-20T19:27:39.233Z"
+  },
+  "steps": [
+    {
+      "id": "step-1",
+      "timestamp": "2026-05-20T19:27:39.233Z",
+      "phase": "action",
+      "action": "NOTIFY_STAKEHOLDER",
+      "details": "Alert delivered",
+      "status": "success"
+    },
+    {
+      "id": "step-2",
+      "timestamp": "2026-05-20T19:27:39.233Z",
+      "phase": "action",
+      "action": "UPDATE_SYSTEM",
+      "details": "Patch failed",
+      "status": "failed"
+    },
+    {
+      "id": "step-3",
+      "timestamp": "2026-05-20T19:27:39.233Z",
+      "phase": "action",
+      "action": "ROLLBACK",
+      "details": "State restored and retry queued",
+      "status": "success"
+    },
+    {
+      "id": "step-4",
+      "timestamp": "2026-05-20T19:27:39.233Z",
+      "phase": "action",
+      "action": "FOLLOW_UP_MONITORING",
+      "details": "30-min watch scheduled",
+      "status": "success"
+    }
+  ],
+  "decisions": [
+    {
+      "id": "decision-1",
+      "timestamp": "2026-05-20T19:27:39.233Z",
+      "question": "Select scenario strategy",
+      "options": [
+        "strict constraints",
+        "balanced"
+      ],
+      "chosen": "strict constraints",
+      "reasoning": "Preferred auditable and feasible chain."
+    }
+  ],
+  "toolCalls": [
+    {
+      "id": "tool-1",
+      "timestamp": "2026-05-20T19:27:39.233Z",
+      "tool": "scenarioEngine",
+      "input": "failed-rollback",
+      "outputSummary": "Scenario simulated",
+      "duration": "45ms"
+    }
+  ],
+  "failures": [
+    {
+      "id": "failure-1",
+      "timestamp": "2026-05-20T19:27:39.233Z",
+      "step": "UPDATE_SYSTEM",
+      "error": "Downstream API 503",
+      "recovery": "rollback",
+      "resolved": true
+    }
+  ]
+}

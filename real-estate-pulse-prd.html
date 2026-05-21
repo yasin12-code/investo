@@ -1,0 +1,624 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>PRD - Personal Investment Advisor</title>
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Mono:wght@400;500&family=Instrument+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --ink: #0e0e0e;
+    --ink-2: #3a3a3a;
+    --ink-3: #787878;
+    --paper: #f5f2eb;
+    --paper-2: #edeae0;
+    --rule: #c9c5b8;
+    --accent: #c8460e;
+    --accent-2: #1a4d2e;
+    --mono: 'DM Mono', monospace;
+    --serif: 'DM Serif Display', Georgia, serif;
+    --sans: 'Instrument Sans', sans-serif;
+  }
+
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    background: var(--paper);
+    color: var(--ink);
+    font-family: var(--sans);
+    line-height: 1.7;
+    font-size: 15px;
+  }
+
+  .cover {
+    background: var(--ink);
+    color: var(--paper);
+    padding: 72px 48px;
+  }
+  .cover .meta {
+    font-family: var(--mono);
+    font-size: 11px;
+    letter-spacing: .08em;
+    text-transform: uppercase;
+    color: rgba(245,242,235,.6);
+    margin-bottom: 32px;
+  }
+  .cover h1 {
+    font-family: var(--serif);
+    font-weight: 400;
+    font-size: clamp(34px, 5vw, 56px);
+    line-height: 1.1;
+    margin-bottom: 20px;
+  }
+  .cover p {
+    max-width: 760px;
+    color: rgba(245,242,235,.8);
+  }
+
+  .container { max-width: 920px; margin: 0 auto; padding: 0 28px 64px; }
+  section { 
+    padding-top: 48px; 
+    border-top: 1px solid var(--rule);
+    margin-top: 12px;
+  }
+  section:first-of-type {
+    border-top: none;
+    margin-top: 0;
+  }
+  .section-label {
+    font-family: var(--mono);
+    font-size: 11px;
+    letter-spacing: .14em;
+    text-transform: uppercase;
+    color: var(--ink-3);
+    margin-bottom: 8px;
+    display: inline-block;
+  }
+  h2 {
+    font-family: var(--serif);
+    font-weight: 400;
+    font-size: clamp(24px, 3vw, 32px);
+    margin-bottom: 12px;
+    margin-top: 4px;
+    color: var(--ink);
+  }
+  p { 
+    color: var(--ink-2); 
+    margin-bottom: 14px;
+    line-height: 1.8;
+  }
+  p strong {
+    color: var(--ink);
+    font-weight: 500;
+  }
+
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 10px;
+    margin-top: 14px;
+  }
+  .card {
+    background: var(--paper-2);
+    border: 1px solid var(--rule);
+    padding: 16px;
+    border-radius: 3px;
+    transition: border-color 0.2s ease;
+  }
+  .card:hover {
+    border-color: var(--accent);
+  }
+  .card h3 {
+    font-size: 13px;
+    margin-bottom: 6px;
+    letter-spacing: .05em;
+    text-transform: uppercase;
+  }
+  .card p { font-size: 13.5px; margin: 0; }
+
+  .diagram {
+    background: #1a1a1a;
+    color: #e8e2d7;
+    padding: 18px;
+    border: 1px solid #2e2e2e;
+    font-family: var(--mono);
+    font-size: 12px;
+    line-height: 1.7;
+    overflow-x: auto;
+    margin-top: 14px;
+  }
+
+  .svg-wrap {
+    background: linear-gradient(135deg, #1a1a1a 0%, #111 100%);
+    border: 1px solid #333;
+    border-radius: 4px;
+    margin-top: 18px;
+    margin-bottom: 18px;
+    padding: 16px;
+    overflow-x: auto;
+  }
+
+  .svg-diagram {
+    width: 100%;
+    min-width: 760px;
+    height: auto;
+    display: block;
+  }
+
+  .svg-title {
+    font-family: var(--mono);
+    font-size: 10px;
+    letter-spacing: .12em;
+    text-transform: uppercase;
+    fill: #8d8679;
+  }
+
+  .svg-label {
+    font-family: var(--mono);
+    font-size: 12px;
+    fill: #f0e8da;
+  }
+
+  .svg-small {
+    font-family: var(--sans);
+    font-size: 11px;
+    fill: #c8c0b3;
+  }
+
+  .svg-box {
+    fill: #1d1d1d;
+    stroke: #6b6256;
+    stroke-width: 1.2;
+    rx: 10;
+    ry: 10;
+  }
+
+  .svg-box-accent {
+    fill: #21150f;
+    stroke: #c8460e;
+    stroke-width: 1.4;
+    rx: 10;
+    ry: 10;
+  }
+
+  .svg-box-soft {
+    fill: #172117;
+    stroke: #4f7256;
+    stroke-width: 1.2;
+    rx: 10;
+    ry: 10;
+  }
+
+  .svg-line {
+    stroke: #988d7e;
+    stroke-width: 1.4;
+    fill: none;
+    marker-end: url(#arrow);
+  }
+
+  .svg-line-accent {
+    stroke: #c8460e;
+    stroke-width: 1.8;
+    fill: none;
+    marker-end: url(#arrowAccent);
+  }
+
+  .svg-note {
+    font-family: var(--sans);
+    font-size: 11px;
+    fill: #d8cfc0;
+  }
+
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 18px;
+    font-size: 13.5px;
+    background: var(--paper-2);
+    border: 1px solid var(--rule);
+    border-radius: 3px;
+    overflow: hidden;
+  }
+  th, td {
+    border-bottom: 1px solid var(--rule);
+    text-align: left;
+    padding: 12px 10px;
+    vertical-align: top;
+  }
+  th {
+    font-family: var(--mono);
+    font-size: 11px;
+    letter-spacing: .1em;
+    text-transform: uppercase;
+    color: var(--ink-3);
+    background: rgba(0,0,0,.02);
+  }
+  tr:last-child td {
+    border-bottom: none;
+  }
+
+  ul { 
+    margin: 14px 0 0 20px;
+    padding: 0;
+  }
+  li { 
+    margin-bottom: 10px; 
+    color: var(--ink-2);
+    line-height: 1.6;
+  }
+  li strong {
+    color: var(--ink);
+    font-weight: 500;
+  }
+
+  footer {
+    border-top: 1px solid var(--rule);
+    font-family: var(--mono);
+    font-size: 11px;
+    color: var(--ink-3);
+    padding: 18px 28px;
+    display: flex;
+    justify-content: space-between;
+    gap: 12px;
+    flex-wrap: wrap;
+  }
+</style>
+</head>
+<body>
+
+<div class="cover">
+  <div class="meta">PRD · v2.1 · May 2026</div>
+  <h1>Personal Investment Advisor</h1>
+  <p>A simple, location-aware system that asks your budget and expected return, analyzes live web-scraped market data, and recommends either local property opportunities or better alternative channels if property in your area cannot meet your target return.</p>
+</div>
+
+<div class="container">
+  <section>
+    <div class="section-label">01 · Concept</div>
+    <h2>What The Product Does</h2>
+    <p>User opens app, location is detected, profile questions are asked, data is scraped, and recommendations are ranked. Output is clear: where to invest now and why.</p>
+    <div class="grid">
+      <div class="card">
+        <h3>User Inputs</h3>
+        <p>Location, budget, target annual return, horizon, risk level.</p>
+      </div>
+      <div class="card">
+        <h3>Data Sources</h3>
+        <p>Property listings, rental data, stocks/REITs, mutual funds, bonds, crypto.</p>
+      </div>
+      <div class="card">
+        <h3>Output</h3>
+        <p>Top ranked investments with expected return, risk, liquidity, and source links.</p>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="section-label">02 · Architecture</div>
+    <h2>How Everything Connects</h2>
+    <p>Users interact with mobile and web apps. These connect to a central API gateway that coordinates with a profile engine (to understand user preferences) and a scraper orchestrator (to collect market data). All data sources feed into a ranking engine that determines the best investment recommendations.</p>
+    <div class="svg-wrap">
+      <svg class="svg-diagram" viewBox="0 0 1100 520" role="img" aria-label="System architecture diagram">
+        <defs>
+          <marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto">
+            <path d="M0,0 L10,5 L0,10 z" fill="#988d7e"></path>
+          </marker>
+          <marker id="arrowAccent" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto">
+            <path d="M0,0 L10,5 L0,10 z" fill="#c8460e"></path>
+          </marker>
+        </defs>
+        <text x="30" y="28" class="svg-title">System Architecture</text>
+        <text x="40" y="50" class="svg-small" style="fill: #787878;">1. User Entry Points</text>
+
+        <rect x="40" y="80" width="160" height="56" class="svg-box-accent"></rect>
+        <text x="120" y="107" text-anchor="middle" class="svg-label">Mobile App</text>
+        <text x="120" y="125" text-anchor="middle" class="svg-small">iOS / Android</text>
+
+        <rect x="40" y="170" width="160" height="56" class="svg-box-accent"></rect>
+        <text x="120" y="197" text-anchor="middle" class="svg-label">Web App</text>
+        <text x="120" y="215" text-anchor="middle" class="svg-small">React Dashboard</text>
+
+        <text x="280" y="50" class="svg-small" style="fill: #787878;">2. Backend & Orchestration</text>
+        <rect x="280" y="110" width="220" height="90" class="svg-box"></rect>
+        <text x="390" y="135" text-anchor="middle" class="svg-label">API Gateway</text>
+        <text x="390" y="155" text-anchor="middle" class="svg-small">Auth · Route requests</text>
+        <text x="390" y="171" text-anchor="middle" class="svg-small">Format responses</text>
+
+        <text x="580" y="50" class="svg-small" style="fill: #787878;">3. Core Logic Engines</text>
+        <rect x="580" y="60" width="220" height="90" class="svg-box-soft"></rect>
+        <text x="690" y="88" text-anchor="middle" class="svg-label">Profile Engine</text>
+        <text x="690" y="110" text-anchor="middle" class="svg-small">Receives: location, budget</text>
+        <text x="690" y="128" text-anchor="middle" class="svg-small">target return, risk level</text>
+
+        <rect x="580" y="180" width="220" height="90" class="svg-box-soft"></rect>
+        <text x="690" y="208" text-anchor="middle" class="svg-label">Scraper Orchestrator</text>
+        <text x="690" y="228" text-anchor="middle" class="svg-small">Schedules jobs · normalizes</text>
+        <text x="690" y="246" text-anchor="middle" class="svg-small">data into one format</text>
+
+        <text x="860" y="28" class="svg-small" style="fill: #787878;">4. Data Sources (all scraped live)</text>
+        <rect x="860" y="40" width="180" height="62" class="svg-box"></rect>
+        <text x="950" y="70" text-anchor="middle" class="svg-label">Property</text>
+        <text x="950" y="88" text-anchor="middle" class="svg-small">(Zameen.com)</text>
+
+        <rect x="860" y="114" width="180" height="62" class="svg-box"></rect>
+        <text x="950" y="144" text-anchor="middle" class="svg-label">REIT / PSX</text>
+        <text x="950" y="162" text-anchor="middle" class="svg-small">(Stock data)</text>
+
+        <rect x="860" y="188" width="180" height="62" class="svg-box"></rect>
+        <text x="950" y="218" text-anchor="middle" class="svg-label">Funds</text>
+        <text x="950" y="236" text-anchor="middle" class="svg-small">(AMCs)</text>
+
+        <rect x="860" y="262" width="180" height="62" class="svg-box"></rect>
+        <text x="950" y="292" text-anchor="middle" class="svg-label">Bonds</text>
+        <text x="950" y="310" text-anchor="middle" class="svg-small">(SBP)</text>
+
+        <rect x="860" y="336" width="180" height="62" class="svg-box"></rect>
+        <text x="950" y="366" text-anchor="middle" class="svg-label">Crypto</text>
+        <text x="950" y="384" text-anchor="middle" class="svg-small">(CoinGecko)</text>
+
+        <text x="580" y="336" class="svg-small" style="fill: #787878;">5. Decision & Output</text>
+        <rect x="580" y="350" width="220" height="86" class="svg-box-accent"></rect>
+        <text x="690" y="378" text-anchor="middle" class="svg-label">Ranking Engine</text>
+        <text x="690" y="398" text-anchor="middle" class="svg-small">Scores & sorts all options</text>
+        <text x="690" y="416" text-anchor="middle" class="svg-small">by user fit</text>
+
+        <rect x="300" y="360" width="180" height="64" class="svg-box"></rect>
+        <text x="390" y="386" text-anchor="middle" class="svg-label">PostgreSQL</text>
+        <text x="390" y="404" text-anchor="middle" class="svg-small">+ Redis Cache</text>
+
+        <rect x="60" y="360" width="160" height="64" class="svg-box-accent"></rect>
+        <text x="140" y="386" text-anchor="middle" class="svg-label">Results API</text>
+        <text x="140" y="404" text-anchor="middle" class="svg-small">to apps</text>
+
+        <line x1="200" y1="108" x2="280" y2="135" class="svg-line-accent"></line>
+        <line x1="200" y1="198" x2="280" y2="155" class="svg-line-accent"></line>
+        <line x1="500" y1="135" x2="580" y2="105" class="svg-line"></line>
+        <line x1="500" y1="155" x2="580" y2="225" class="svg-line"></line>
+        <line x1="800" y1="105" x2="860" y2="71" class="svg-line"></line>
+        <line x1="800" y1="225" x2="860" y2="71" class="svg-line"></line>
+        <line x1="800" y1="225" x2="860" y2="145" class="svg-line"></line>
+        <line x1="800" y1="225" x2="860" y2="219" class="svg-line"></line>
+        <line x1="800" y1="225" x2="860" y2="293" class="svg-line"></line>
+        <line x1="800" y1="225" x2="860" y2="367" class="svg-line"></line>
+        <line x1="580" y1="393" x2="480" y2="392" class="svg-line-accent"></line>
+        <line x1="300" y1="392" x2="220" y2="392" class="svg-line"></line>
+        <line x1="220" y1="392" x2="300" y2="392" class="svg-line"></line>
+        <text x="520" y="500" text-anchor="middle" class="svg-note">Data flows: apps → gateway → engines → sources → ranking → cache → apps with results + explanations</text>
+      </svg>
+    </div>
+    <p style="margin-top: 20px;"><strong>Why this architecture:</strong> The API gateway provides a single entry point that scales. The profile engine learns what users want. The scraper orchestrator centralizes all data collection. The ranking engine ensures every recommendation actually matches the user's needs. The cache layer ensures fast repeated queries.</p>
+  </section>
+
+  <section>
+    <div class="section-label">03 · Flow</div>
+    <h2>How a User Gets a Recommendation</h2>
+    <p>A user opens the app and goes through a simple 6-step flow. The system detects their location, asks about budget and goals, collects live market data, normalizes it into one format, scores all options against their profile, then decides whether to recommend property or alternatives.</p>
+    <div class="svg-wrap">
+      <svg class="svg-diagram" viewBox="0 0 1200 300" role="img" aria-label="Data flow diagram">
+        <defs>
+          <marker id="flowArrow" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto">
+            <path d="M0,0 L10,5 L0,10 z" fill="#c8460e"></path>
+          </marker>
+        </defs>
+        <text x="30" y="28" class="svg-title">Recommendation Flow (6 Steps)</text>
+        <rect x="30" y="70" width="140" height="58" class="svg-box-accent"></rect>
+        <text x="100" y="94" text-anchor="middle" class="svg-label">1. Location</text>
+        <text x="100" y="115" text-anchor="middle" class="svg-small">GPS or select</text>
+
+        <rect x="210" y="70" width="140" height="58" class="svg-box-accent"></rect>
+        <text x="280" y="94" text-anchor="middle" class="svg-label">2. Profile</text>
+        <text x="280" y="115" text-anchor="middle" class="svg-small">Budget & goals</text>
+
+        <rect x="390" y="70" width="150" height="58" class="svg-box"></rect>
+        <text x="465" y="94" text-anchor="middle" class="svg-label">3. Scrape</text>
+        <text x="465" y="115" text-anchor="middle" class="svg-small">Live data</text>
+
+        <rect x="570" y="70" width="150" height="58" class="svg-box"></rect>
+        <text x="645" y="94" text-anchor="middle" class="svg-label">4. Normalize</text>
+        <text x="645" y="115" text-anchor="middle" class="svg-small">One schema</text>
+
+        <rect x="750" y="70" width="150" height="58" class="svg-box-soft"></rect>
+        <text x="825" y="94" text-anchor="middle" class="svg-label">5. Score</text>
+        <text x="825" y="115" text-anchor="middle" class="svg-small">Match user</text>
+
+        <rect x="930" y="52" width="220" height="94" class="svg-box-accent"></rect>
+        <text x="1040" y="82" text-anchor="middle" class="svg-label">6. Decide</text>
+        <text x="1040" y="106" text-anchor="middle" class="svg-small">Property ✓ or</text>
+        <text x="1040" y="124" text-anchor="middle" class="svg-small">Alternatives ✓</text>
+
+        <line x1="170" y1="99" x2="210" y2="99" class="svg-line-accent" marker-end="url(#flowArrow)"></line>
+        <line x1="350" y1="99" x2="390" y2="99" class="svg-line-accent" marker-end="url(#flowArrow)"></line>
+        <line x1="540" y1="99" x2="570" y2="99" class="svg-line" marker-end="url(#flowArrow)"></line>
+        <line x1="720" y1="99" x2="750" y2="99" class="svg-line" marker-end="url(#flowArrow)"></line>
+        <line x1="900" y1="99" x2="930" y2="99" class="svg-line-accent" marker-end="url(#flowArrow)"></line>
+
+        <rect x="250" y="190" width="180" height="52" class="svg-box"></rect>
+        <text x="340" y="222" text-anchor="middle" class="svg-label">Property Path</text>
+        <rect x="500" y="190" width="180" height="52" class="svg-box"></rect>
+        <text x="590" y="222" text-anchor="middle" class="svg-label">Alternative Path</text>
+        <rect x="800" y="190" width="260" height="52" class="svg-box-soft"></rect>
+        <text x="930" y="222" text-anchor="middle" class="svg-label">Explain results + source timestamps</text>
+
+        <line x1="1040" y1="146" x2="930" y2="190" class="svg-line-accent" marker-end="url(#flowArrow)"></line>
+        <line x1="1040" y1="146" x2="590" y2="190" class="svg-line" marker-end="url(#flowArrow)"></line>
+      </svg>
+    </div>
+    <ul>
+      <li><strong>Decision rule:</strong> If property ROI ≥ user's target return AND risk is acceptable, recommend property.</li>
+      <li><strong>Fallback rule:</strong> If property fails the threshold, rank and recommend alternatives (REITs, mutual funds, bonds, crypto).</li>
+      <li><strong>Always explain:</strong> User sees why each recommendation matches their profile and the expected return.</li>
+    </ul>
+  </section>
+
+  <section>
+    <div class="section-label">03A · Analysis</div>
+    <h2>Analysis Methodology</h2>
+    <p>The analysis layer transforms raw scraped data into actionable recommendations. It runs a short, deterministic pipeline for each request and stores derived features for monitoring and backtesting.</p>
+    <ul>
+      <li><strong>1) Data ingestion:</strong> Scrapers push raw records (listings, prices, yields, volumes, timestamps) into the normalization queue. Each record is tagged with source, fetch time, and confidence score.</li>
+      <li><strong>2) Normalization & feature extraction:</strong> Convert different source schemas into a single canonical schema. Extract features such as annualized rental yield, estimated capital appreciation (from historic price trends), vacancy rate, liquidity proxy, and source reliability.</li>
+      <li><strong>3) Scoring functions (deterministic):</strong> Compute expected return and a composite risk score. Example formulas shown below are used as the default, explainable method the UI displays to users.</li>
+    </ul>
+    <div style="background: #111; color: #e8e2d7; padding: 12px; border-radius: 4px; margin: 8px 0; font-family: var(--mono); font-size: 13px;">
+      Expected return = rental_yield + capital_appreciation_annualized
+      <br>
+      Risk score = normalize(volatility, vacancy_rate, regulatory_risk, data_confidence)
+      <br>
+      Composite score = 0.4 * return_match + 0.3 * (1 - risk_score) + 0.2 * liquidity_score + 0.1 * location_fit
+    </div>
+    <ul>
+      <li><strong>4) Heuristics + thresholds:</strong> The decision step uses clear thresholds: if expected_return ≥ user_target_return and risk_score ≤ user_risk_tolerance, classify as "Property suitable". Otherwise, surface alternative asset classes ranked by the same composite score.</li>
+      <li><strong>5) Optional ML refinement:</strong> An optional supervised model (e.g. gradient-boosted tree) can be trained to predict realized returns using historical labelled data. Model outputs are combined with deterministic scores; SHAP values provide per-feature explainability to the user.</li>
+      <li><strong>6) Backtesting & monitoring:</strong> Periodic backtests evaluate Precision@K and MAE of predicted vs actual returns. Data quality checks flag stale or low-confidence sources and trigger scraper re-runs or source removal.</li>
+      <li><strong>7) Explainability:</strong> Every recommendation includes a plain-language explanation: "Expected return X% (rental Y% + appreciation Z%), risk: medium, liquidity: 30 days. Data from Zameen.com, last updated 12m ago."</li>
+    </ul>
+    <p>Implementation notes:</p>
+    <ul>
+      <li>Feature store: derived features are stored in Postgres (time-series table) and cached in Redis for fast recompute.</li>
+      <li>Scoring endpoint: a stateless microservice computes scores per request using current features and user profile; it returns ranked options with confidence intervals.</li>
+      <li>Retraining: ML models retrain weekly or on-demand after significant data drift is detected.</li>
+    </ul>
+
+  </section>
+
+  <section>
+    <div class="section-label">04 · Use Cases</div>
+    <h2>How Different Users Interact</h2>
+    <p>An investor provides their location, enters their budget and target return, and the system responds with the best available options. The system can recommend property, alternative channels, or both—always with a clear explanation of why.</p>
+    <div class="svg-wrap">
+      <svg class="svg-diagram" viewBox="0 0 1120 280" role="img" aria-label="Use cases diagram">
+        <defs>
+          <marker id="ucArrow" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto">
+            <path d="M0,0 L10,5 L0,10 z" fill="#988d7e"></path>
+          </marker>
+        </defs>
+        <text x="30" y="28" class="svg-title">User Journey</text>
+        <ellipse cx="120" cy="140" rx="78" ry="42" class="svg-box-accent"></ellipse>
+        <text x="120" y="130" text-anchor="middle" class="svg-label">Investor</text>
+        <text x="120" y="150" text-anchor="middle" class="svg-small">opens app</text>
+
+        <rect x="300" y="50" width="180" height="55" class="svg-box"></rect>
+        <text x="390" y="78" text-anchor="middle" class="svg-label">1. My Location</text>
+        <text x="390" y="96" text-anchor="middle" class="svg-small">Karachi / Lahore</text>
+
+        <rect x="300" y="116" width="180" height="55" class="svg-box"></rect>
+        <text x="390" y="144" text-anchor="middle" class="svg-label">2. My Budget</text>
+        <text x="390" y="162" text-anchor="middle" class="svg-small">₨50 lakh</text>
+
+        <rect x="300" y="182" width="180" height="55" class="svg-box"></rect>
+        <text x="390" y="210" text-anchor="middle" class="svg-label">3. Target Return</text>
+        <text x="390" y="228" text-anchor="middle" class="svg-small">12% / year</text>
+
+        <rect x="590" y="50" width="200" height="55" class="svg-box-soft"></rect>
+        <text x="690" y="78" text-anchor="middle" class="svg-label">Property Match</text>
+        <text x="690" y="96" text-anchor="middle" class="svg-small">if available</text>
+
+        <rect x="590" y="116" width="200" height="55" class="svg-box-soft"></rect>
+        <text x="690" y="144" text-anchor="middle" class="svg-label">Alternatives</text>
+        <text x="690" y="162" text-anchor="middle" class="svg-small">REIT / Funds</text>
+
+        <rect x="590" y="182" width="200" height="55" class="svg-box-soft"></rect>
+        <text x="690" y="210" text-anchor="middle" class="svg-label">Compare & Pick</text>
+        <text x="690" y="228" text-anchor="middle" class="svg-small">with details</text>
+
+        <rect x="870" y="78" width="200" height="110" class="svg-box-accent"></rect>
+        <text x="970" y="110" text-anchor="middle" class="svg-label">Result Set</text>
+        <text x="970" y="132" text-anchor="middle" class="svg-small">5-10 ranked</text>
+        <text x="970" y="150" text-anchor="middle" class="svg-small">options with</text>
+        <text x="970" y="168" text-anchor="middle" class="svg-small">why & sources</text>
+
+        <line x1="198" y1="140" x2="300" y2="78" class="svg-line" marker-end="url(#ucArrow)"></line>
+        <line x1="198" y1="140" x2="300" y2="144" class="svg-line" marker-end="url(#ucArrow)"></line>
+        <line x1="198" y1="140" x2="300" y2="210" class="svg-line" marker-end="url(#ucArrow)"></line>
+        <line x1="480" y1="78" x2="590" y2="78" class="svg-line-accent" marker-end="url(#ucArrow)"></line>
+        <line x1="480" y1="144" x2="590" y2="144" class="svg-line-accent" marker-end="url(#ucArrow)"></line>
+        <line x1="480" y1="210" x2="590" y2="210" class="svg-line-accent" marker-end="url(#ucArrow)"></line>
+        <line x1="790" y1="144" x2="870" y2="126" class="svg-line-accent" marker-end="url(#ucArrow)"></line>
+      </svg>
+    </div>
+    <ul>
+      <li><strong>Scenario 1:</strong> A first-time investor in Karachi with ₨50L finds property ROI is 8% but needs 12%. System recommends REITs (10.5%) and mutual funds (11.8%) instead.</li>
+      <li><strong>Scenario 2:</strong> An experienced investor in Islamabad with higher budget finds multiple good property options. System ranks by ROI, risk, and location convenience.</li>
+      <li><strong>Scenario 3:</strong> User compares "property in Lahore" vs "REIT in KCCI" side-by-side. System shows expected return, liquidity, risk rating, and source link for verification.</li>
+    </ul>
+  </section>
+
+  <section>
+    <div class="section-label">05 · Build & Deployment</div>
+    <h2>Build Process, Pipeline, and Release</h2>
+    <p>The system is built across frontend, backend, and data layers. Each component is developed in parallel, integrated through the API, tested, and deployed to production servers and app stores.</p>
+    <div class="grid">
+      <div class="card">
+        <h3>Build</h3>
+        <p>Frontend in React / mobile in Flutter or native, backend in Node.js, scrapers in Puppeteer/Cheerio, database in PostgreSQL, cache in Redis.</p>
+      </div>
+      <div class="card">
+        <h3>Data pipeline</h3>
+        <p>Scrapers run on a schedule, normalize data into one schema, and pass it to the ranking engine for scoring and filtering.</p>
+      </div>
+      <div class="card">
+        <h3>Deployment</h3>
+        <p>Backend hosted on cloud platform, scrapers run as workers or cron jobs, mobile apps released through stores, web app deployed on static hosting or container hosting.</p>
+      </div>
+    </div>
+    <ul>
+      <li><strong>Data pipeline:</strong> Scrape live data → validate quality → store in PostgreSQL → cache hot results in Redis → rank engine computes recommendations → API returns to users.</li>
+      <li><strong>Scraper health:</strong> Each source has retry logic, freshness timestamps, error tracking, and automated fallback if data is stale.</li>
+      <li><strong>Release cycle:</strong> Code → test suite → staging environment → production cloud → mobile app stores (with beta periods).</li>
+    </ul>
+  </section>
+
+  <section>
+    <div class="section-label">06 · Software Engineering Report</div>
+    <h2>Academic & Professional Structure</h2>
+    <p>This PRD follows a professional software engineering report format suitable for UIT and industry submission. It combines business logic with technical architecture, use cases with implementation details, and deployment considerations with operational guidelines.</p>
+    <table>
+      <thead>
+        <tr><th>Report Part</th><th>What to explain</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>Problem statement</td><td>Why users need a location-based investment advisor</td></tr>
+        <tr><td>Requirements</td><td>Location, budget, target return, alternatives, data freshness</td></tr>
+        <tr><td>Architecture</td><td>How apps, backend, scrapers, ranking, and database connect</td></tr>
+        <tr><td>Use cases</td><td>How a user actually uses the software step by step</td></tr>
+        <tr><td>Implementation</td><td>How the system is built, tested, and deployed</td></tr>
+      </tbody>
+    </table>
+  </section>
+
+  <section>
+    <div class="section-label">07 · Tech Stack</div>
+    <h2>Recommended Stack</h2>
+    <table>
+      <thead>
+        <tr><th>Layer</th><th>Choice</th><th>Purpose</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>Mobile</td><td>SwiftUI (iOS), Kotlin Compose (Android)</td><td>Fast onboarding, geolocation, push alerts</td></tr>
+        <tr><td>Web</td><td>React + Tailwind</td><td>Deep analysis dashboard and comparisons</td></tr>
+        <tr><td>Backend</td><td>Node.js + Express</td><td>Recommendation API and orchestration</td></tr>
+        <tr><td>Scraping</td><td>Puppeteer + Cheerio</td><td>Collect listing and market data</td></tr>
+        <tr><td>Data</td><td>PostgreSQL + Redis</td><td>Persistence + fast cached reads</td></tr>
+        <tr><td>Jobs</td><td>node-cron / queue worker</td><td>Scheduled scraper runs and retries</td></tr>
+      </tbody>
+    </table>
+  </section>
+
+  <section>
+    <div class="section-label">08 · How It Works in Practice</div>
+    <h2>Runtime Behavior & User Experience</h2>
+    <ul>
+      <li><strong>Data freshness:</strong> Every recommendation is timestamped. If data is >2 hours old, system re-scrapes before responding. User sees "Last updated: 10 mins ago".</li>
+      <li><strong>Ranking algorithm:</strong> Score = (ROI match to target × 0.4) + (risk fit × 0.3) + (liquidity score × 0.2) + (location fit × 0.1). Options sorted by score.</li>
+      <li><strong>Explanation layer:</strong> Every recommendation explains: expected ROI range, why it fits your profile, liquidity timeline, where data came from, link to original source.</li>
+      <li><strong>Refresh & compare:</strong> User can manually refresh for latest data (re-scrape), compare two options side-by-side, or adjust their profile and re-run instantly.</li>
+    </ul>
+  </section>
+</div>
+
+<footer>
+  <span>Personal Investment Advisor - PRD for UIT Software Engineering Report</span>
+  <span>SVG Architecture · Data Flow · Use Cases · Deployment</span>
+</footer>
+
+</body>
+</html>

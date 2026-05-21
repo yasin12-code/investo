@@ -1,0 +1,16 @@
+{
+  "sessionId": "6f98f239-2129-47ff-92d2-3fbe652808d9",
+  "savedAt": "2026-05-20T11:37:30.025Z",
+  "features": {
+    "profile": {
+      "location": "Lahore",
+      "budget": 5000000,
+      "targetReturn": 10,
+      "riskTolerance": "Moderate"
+    },
+    "derived": {
+      "sourceCount": 4,
+      "timestamp": "2026-05-20T11:37:30.025Z"
+    }
+  }
+}

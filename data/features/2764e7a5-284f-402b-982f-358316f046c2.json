@@ -1,0 +1,1706 @@
+{
+  "sessionId": "2764e7a5-284f-402b-982f-358316f046c2",
+  "savedAt": "2026-05-20T12:00:38.974Z",
+  "features": {
+    "sourcesCount": 5,
+    "summary": {
+      "sourceCount": 5,
+      "claimCount": 5
+    },
+    "normalized": [
+      {
+        "sourceId": "pra-lahore-q1-2026",
+        "sourceType": "report",
+        "sourceName": "Punjab Revenue Authority - Lahore Property Market Report Q1 2026",
+        "credibilityScore": 0.9,
+        "freshness": "2026-01-04T19:00:00.000Z",
+        "claims": [
+          {
+            "metric": "avg_price_per_marla_dha6",
+            "value": 18000000,
+            "unit": "PKR",
+            "confidence": 0.88,
+            "context": "Average price per marla in DHA Phase 6 as of Q4 2025"
+          },
+          {
+            "metric": "property_price_growth_yoy",
+            "value": 18.2,
+            "unit": "percent",
+            "confidence": 0.88,
+            "context": "YoY growth based on registered transactions (DHA Phase 6)"
+          },
+          {
+            "metric": "overall_property_price_growth",
+            "value": 18,
+            "unit": "percent",
+            "confidence": 0.85,
+            "context": "Average property price increase across all major housing societies and commercial zones in Lahore"
+          },
+          {
+            "metric": "bahria_town_price_growth",
+            "value": 16.7,
+            "unit": "percent",
+            "confidence": 0.87,
+            "context": "Bahria Town Lahore YoY growth rate"
+          },
+          {
+            "metric": "gulberg_model_town_growth",
+            "value": {
+              "min": 10,
+              "max": 12
+            },
+            "unit": "percent",
+            "confidence": 0.82,
+            "context": "Gulberg and Model Town growth range"
+          },
+          {
+            "metric": "johar_town_growth",
+            "value": 11.4,
+            "unit": "percent",
+            "confidence": 0.85,
+            "context": "Johar Town YoY growth rate"
+          },
+          {
+            "metric": "total_transactions",
+            "value": 45230,
+            "unit": "count",
+            "confidence": 0.9,
+            "context": "Total registered property transactions in Lahore 2025"
+          },
+          {
+            "metric": "transaction_volume_growth",
+            "value": 8.5,
+            "unit": "percent",
+            "confidence": 0.88,
+            "context": "Transaction volume increase over 2024"
+          },
+          {
+            "metric": "avg_transaction_value",
+            "value": 25000000,
+            "unit": "PKR",
+            "confidence": 0.87,
+            "context": "Average transaction value in Lahore"
+          },
+          {
+            "metric": "avg_rental_yield_lahore",
+            "value": 2.5,
+            "unit": "percent",
+            "confidence": 0.83,
+            "context": "Average rental yield across all Lahore areas"
+          },
+          {
+            "metric": "new_housing_units_2025",
+            "value": 12500,
+            "unit": "count",
+            "confidence": 0.8,
+            "context": "New housing units delivered in Lahore in 2025"
+          },
+          {
+            "metric": "estimated_housing_demand",
+            "value": 18000,
+            "unit": "units_per_year",
+            "confidence": 0.75,
+            "context": "Estimated annual housing demand in Lahore"
+          },
+          {
+            "metric": "expected_price_growth_2026",
+            "value": {
+              "min": 15,
+              "max": 18
+            },
+            "unit": "percent",
+            "confidence": 0.7,
+            "context": "Projected Lahore property price appreciation for 2026"
+          },
+          {
+            "metric": "expected_total_return",
+            "value": {
+              "min": 17,
+              "max": 21
+            },
+            "unit": "percent",
+            "confidence": 0.7,
+            "context": "Expected total annual return (capital appreciation + rental yield)"
+          }
+        ],
+        "temporalData": [],
+        "rawData": "================================================================\nPUNJAB REVENUE AUTHORITY\nLAHORE PROPERTY MARKET ANALYSIS REPORT\nQ4 2025 / Q1 2026 OUTLOOK\n================================================================\n\nREPORT ID: PRA-LHR-2026-Q1-001\nDATE OF PUBLICATION: January 5, 2026\nCLASSIFICATION: Public Release\nCREDIBILITY: Government Authority (High)\n\n================================================================\nEXECUTIVE SUMMARY\n================================================================\n\nThe Lahore property market demonstrated robust performance in 2025,\nwith average property prices increasing by approximately 18% year-\nover-year across all major housing societies and commercial zones.\n\nThis growth was driven by strong demand from overseas Pakistanis,\ninfrastructure development including the Orange Line Metro extension,\nand favorable demographic trends in the 25-40 age bracket.\n\n================================================================\nKEY FINDINGS\n================================================================\n\n1. PRICE PERFORMANCE\n   - Average price per marla in DHA Phase 6: PKR 18,000,000\n   - Year-over-year growth: 18.2% (based on registered transactions)\n   - Bahria Town Lahore growth: 16.7%\n   - Gulberg and Model Town: 10-12% growth\n   - Johar Town: 11.4% growth\n\n2. TRANSACTION VOLUME\n   - Total registered property transactions in Lahore: 45,230\n   - Increase over 2024: 8.5%\n   - Average transaction value: PKR 25,000,000\n\n3. RENTAL MARKET\n   - Average rental yield across Lahore: 2.5%\n   - DHA Phase 6 rental yield: 1.9-2.1%\n   - Bahria Town rental yield: 2.3-2.5%\n   - Johar Town rental yield: 3.0-3.5% (highest yield area)\n\n4. SUPPLY AND DEMAND\n   - New housing units delivered in 2025: 12,500\n   - Estimated housing demand: 18,000 units per year\n   - Supply deficit: approximately 5,500 units\n   - Vacancy rates remain low at 7-8% in premium areas\n\n================================================================\nMARKET OUTLOOK 2026\n================================================================\n\nWe project continued strong growth in Lahore property prices:\n- Expected price appreciation: 15-18% in 2026\n- DHA and Bahria Town to lead growth\n- Commercial property expected to outperform residential\n- Rental yields expected to stabilize at current levels\n\nKEY GROWTH DRIVERS:\n- Continued infrastructure investment (Ring Road, Metro extensions)\n- Overseas Pakistani remittances (projected $35B nationally)\n- Population growth and urbanization (Lahore growing at 3.5% annually)\n- Government housing incentives under Naya Pakistan Housing scheme\n- Expected SBP rate cuts making mortgages more affordable\n\n================================================================\nRISK FACTORS\n================================================================\n\n- Political instability could deter overseas investment\n- Inflation remains elevated at 12%\n- Documentation requirements may slow cash transactions\n- Global economic slowdown could reduce remittances\n- Potential oversupply in apartment segment in DHA Phase 8-9\n\n================================================================\nINVESTMENT RECOMMENDATION\n================================================================\n\nBased on our analysis, Lahore property remains an attractive\ninvestment opportunity with expected returns of 15-18% (capital\nappreciation) plus 2-3% (rental yield) for a total return\npotential of 17-21% annually.\n\nWe rate Lahore property as BUY for investors with:\n- Budget: PKR 20,000,000+\n- Time horizon: 3-5 years\n- Risk tolerance: Moderate to High\n- Liquidity needs: Low (property is illiquid)\n\n================================================================\nMETHODOLOGY NOTE\n================================================================\n\nThis report is based on:\n- 12,450 registered property transactions in Q3-Q4 2025\n- Price data from Punjab Land Revenue Authority (PLRA)\n- Survey of 200 licensed property dealers\n- Macroeconomic data from State Bank of Pakistan\n\nNote: Prices used are registered prices which may differ from\nactual transaction prices. Registered prices tend to be higher\nthan market transaction prices due to documentation requirements.\n\n================================================================\nDISCLAIMER\n================================================================\n\nThis report is for informational purposes only. The Punjab Revenue\nAuthority does not provide investment advice. Property investment\ninvolves risks including potential loss of capital. Past performance\ndoes not guarantee future results.\n\nReport prepared by: Economic Analysis Division\nPunjab Revenue Authority, Lahore\nContact: analysis@pra.punjab.gov.pk\n================================================================\n"
+      },
+      {
+        "sourceId": "csv-property-prices",
+        "sourceType": "csv",
+        "sourceName": "Lahore Property Prices - Historical Time Series",
+        "credibilityScore": 0.5,
+        "freshness": "2026-05-20T12:00:38.974Z",
+        "claims": [
+          {
+            "metric": "latest_price_dha_phase_6",
+            "value": 18000000,
+            "unit": "PKR/marla",
+            "confidence": 0.93,
+            "context": "Latest average price per marla in DHA Phase 6 (2025-Q4) for Lahore"
+          },
+          {
+            "metric": "yoy_growth_dha_phase_6",
+            "value": 16.1,
+            "unit": "percent",
+            "confidence": 0.93,
+            "context": "Year-over-year price growth in DHA Phase 6 as of 2025-Q4 for Lahore"
+          },
+          {
+            "metric": "rental_yield_dha_phase_6",
+            "value": 1.9,
+            "unit": "percent",
+            "confidence": 0.93,
+            "context": "Current rental yield in DHA Phase 6 for Lahore"
+          },
+          {
+            "metric": "trend_dha_phase_6",
+            "value": "strongly_rising",
+            "unit": "trend",
+            "confidence": 0.93,
+            "context": "Price trend in DHA Phase 6: strongly_rising, momentum losing for Lahore"
+          },
+          {
+            "metric": "latest_price_bahria_town",
+            "value": 14000000,
+            "unit": "PKR/marla",
+            "confidence": 0.9,
+            "context": "Latest average price per marla in Bahria Town (2025-Q4) for Lahore"
+          },
+          {
+            "metric": "yoy_growth_bahria_town",
+            "value": 16.7,
+            "unit": "percent",
+            "confidence": 0.9,
+            "context": "Year-over-year price growth in Bahria Town as of 2025-Q4 for Lahore"
+          },
+          {
+            "metric": "rental_yield_bahria_town",
+            "value": 2.3,
+            "unit": "percent",
+            "confidence": 0.9,
+            "context": "Current rental yield in Bahria Town for Lahore"
+          },
+          {
+            "metric": "trend_bahria_town",
+            "value": "strongly_rising",
+            "unit": "trend",
+            "confidence": 0.9,
+            "context": "Price trend in Bahria Town: strongly_rising, momentum gaining for Lahore"
+          },
+          {
+            "metric": "latest_price_gulberg",
+            "value": 22000000,
+            "unit": "PKR/marla",
+            "confidence": 0.87,
+            "context": "Latest average price per marla in Gulberg (2025-Q1) for Lahore"
+          },
+          {
+            "metric": "yoy_growth_gulberg",
+            "value": 10,
+            "unit": "percent",
+            "confidence": 0.87,
+            "context": "Year-over-year price growth in Gulberg as of 2025-Q1 for Lahore"
+          },
+          {
+            "metric": "rental_yield_gulberg",
+            "value": 1.6,
+            "unit": "percent",
+            "confidence": 0.87,
+            "context": "Current rental yield in Gulberg for Lahore"
+          },
+          {
+            "metric": "trend_gulberg",
+            "value": "rising",
+            "unit": "trend",
+            "confidence": 0.87,
+            "context": "Price trend in Gulberg: rising, momentum gaining for Lahore"
+          },
+          {
+            "metric": "latest_price_johar_town",
+            "value": 7800000,
+            "unit": "PKR/marla",
+            "confidence": 0.85,
+            "context": "Latest average price per marla in Johar Town (2025-Q1) for Lahore"
+          },
+          {
+            "metric": "yoy_growth_johar_town",
+            "value": 11.4,
+            "unit": "percent",
+            "confidence": 0.85,
+            "context": "Year-over-year price growth in Johar Town as of 2025-Q1 for Lahore"
+          },
+          {
+            "metric": "rental_yield_johar_town",
+            "value": 3.3,
+            "unit": "percent",
+            "confidence": 0.85,
+            "context": "Current rental yield in Johar Town for Lahore"
+          },
+          {
+            "metric": "trend_johar_town",
+            "value": "rising",
+            "unit": "trend",
+            "confidence": 0.85,
+            "context": "Price trend in Johar Town: rising, momentum losing for Lahore"
+          },
+          {
+            "metric": "latest_price_model_town",
+            "value": 18000000,
+            "unit": "PKR/marla",
+            "confidence": 0.87,
+            "context": "Latest average price per marla in Model Town (2025-Q1) for Lahore"
+          },
+          {
+            "metric": "yoy_growth_model_town",
+            "value": 9.1,
+            "unit": "percent",
+            "confidence": 0.87,
+            "context": "Year-over-year price growth in Model Town as of 2025-Q1 for Lahore"
+          },
+          {
+            "metric": "rental_yield_model_town",
+            "value": 1.7,
+            "unit": "percent",
+            "confidence": 0.87,
+            "context": "Current rental yield in Model Town for Lahore"
+          },
+          {
+            "metric": "trend_model_town",
+            "value": "rising",
+            "unit": "trend",
+            "confidence": 0.87,
+            "context": "Price trend in Model Town: rising, momentum losing for Lahore"
+          }
+        ],
+        "temporalData": [],
+        "rawData": [
+          {
+            "area": "DHA Phase 6",
+            "year": 2020,
+            "quarter": "Q1",
+            "avg_price_per_marla_pkr": 8500000,
+            "rental_yield_pct": 3.2,
+            "vacancy_rate_pct": 12.5,
+            "num_transactions": 145,
+            "price_change_yoy_pct": -2.1,
+            "source_confidence": 0.95
+          },
+          {
+            "area": "DHA Phase 6",
+            "year": 2020,
+            "quarter": "Q2",
+            "avg_price_per_marla_pkr": 8300000,
+            "rental_yield_pct": 3.3,
+            "vacancy_rate_pct": 14.2,
+            "num_transactions": 120,
+            "price_change_yoy_pct": -3.5,
+            "source_confidence": 0.95
+          },
+          {
+            "area": "DHA Phase 6",
+            "year": 2020,
+            "quarter": "Q3",
+            "avg_price_per_marla_pkr": 8100000,
+            "rental_yield_pct": 3.4,
+            "vacancy_rate_pct": 15,
+            "num_transactions": 98,
+            "price_change_yoy_pct": -4.7,
+            "source_confidence": 0.95
+          },
+          {
+            "area": "DHA Phase 6",
+            "year": 2020,
+            "quarter": "Q4",
+            "avg_price_per_marla_pkr": 8200000,
+            "rental_yield_pct": 3.3,
+            "vacancy_rate_pct": 13.8,
+            "num_transactions": 132,
+            "price_change_yoy_pct": -3.5,
+            "source_confidence": 0.95
+          },
+          {
+            "area": "DHA Phase 6",
+            "year": 2021,
+            "quarter": "Q1",
+            "avg_price_per_marla_pkr": 8600000,
+            "rental_yield_pct": 3.1,
+            "vacancy_rate_pct": 11.2,
+            "num_transactions": 156,
+            "price_change_yoy_pct": 1.2,
+            "source_confidence": 0.95
+          },
+          {
+            "area": "DHA Phase 6",
+            "year": 2021,
+            "quarter": "Q2",
+            "avg_price_per_marla_pkr": 9000000,
+            "rental_yield_pct": 3,
+            "vacancy_rate_pct": 10.5,
+            "num_transactions": 178,
+            "price_change_yoy_pct": 8.4,
+            "source_confidence": 0.95
+          },
+          {
+            "area": "DHA Phase 6",
+            "year": 2021,
+            "quarter": "Q3",
+            "avg_price_per_marla_pkr": 9400000,
+            "rental_yield_pct": 2.9,
+            "vacancy_rate_pct": 9.8,
+            "num_transactions": 195,
+            "price_change_yoy_pct": 16,
+            "source_confidence": 0.95
+          },
+          {
+            "area": "DHA Phase 6",
+            "year": 2021,
+            "quarter": "Q4",
+            "avg_price_per_marla_pkr": 9800000,
+            "rental_yield_pct": 2.8,
+            "vacancy_rate_pct": 9.2,
+            "num_transactions": 210,
+            "price_change_yoy_pct": 19.5,
+            "source_confidence": 0.95
+          },
+          {
+            "area": "DHA Phase 6",
+            "year": 2022,
+            "quarter": "Q1",
+            "avg_price_per_marla_pkr": 10500000,
+            "rental_yield_pct": 2.7,
+            "vacancy_rate_pct": 8.5,
+            "num_transactions": 225,
+            "price_change_yoy_pct": 22.1,
+            "source_confidence": 0.95
+          },
+          {
+            "area": "DHA Phase 6",
+            "year": 2022,
+            "quarter": "Q2",
+            "avg_price_per_marla_pkr": 11200000,
+            "rental_yield_pct": 2.5,
+            "vacancy_rate_pct": 7.8,
+            "num_transactions": 240,
+            "price_change_yoy_pct": 24.4,
+            "source_confidence": 0.95
+          },
+          {
+            "area": "DHA Phase 6",
+            "year": 2022,
+            "quarter": "Q3",
+            "avg_price_per_marla_pkr": 11800000,
+            "rental_yield_pct": 2.4,
+            "vacancy_rate_pct": 8.2,
+            "num_transactions": 215,
+            "price_change_yoy_pct": 25.5,
+            "source_confidence": 0.95
+          },
+          {
+            "area": "DHA Phase 6",
+            "year": 2022,
+            "quarter": "Q4",
+            "avg_price_per_marla_pkr": 12000000,
+            "rental_yield_pct": 2.4,
+            "vacancy_rate_pct": 8.5,
+            "num_transactions": 200,
+            "price_change_yoy_pct": 22.4,
+            "source_confidence": 0.95
+          },
+          {
+            "area": "DHA Phase 6",
+            "year": 2023,
+            "quarter": "Q1",
+            "avg_price_per_marla_pkr": 12200000,
+            "rental_yield_pct": 2.5,
+            "vacancy_rate_pct": 9,
+            "num_transactions": 185,
+            "price_change_yoy_pct": 16.2,
+            "source_confidence": 0.9
+          },
+          {
+            "area": "DHA Phase 6",
+            "year": 2023,
+            "quarter": "Q2",
+            "avg_price_per_marla_pkr": 12500000,
+            "rental_yield_pct": 2.5,
+            "vacancy_rate_pct": 9.5,
+            "num_transactions": 170,
+            "price_change_yoy_pct": 11.6,
+            "source_confidence": 0.9
+          },
+          {
+            "area": "DHA Phase 6",
+            "year": 2023,
+            "quarter": "Q3",
+            "avg_price_per_marla_pkr": 12800000,
+            "rental_yield_pct": 2.4,
+            "vacancy_rate_pct": 10,
+            "num_transactions": 160,
+            "price_change_yoy_pct": 8.5,
+            "source_confidence": 0.9
+          },
+          {
+            "area": "DHA Phase 6",
+            "year": 2023,
+            "quarter": "Q4",
+            "avg_price_per_marla_pkr": 13000000,
+            "rental_yield_pct": 2.4,
+            "vacancy_rate_pct": 10.5,
+            "num_transactions": 155,
+            "price_change_yoy_pct": 8.3,
+            "source_confidence": 0.9
+          },
+          {
+            "area": "DHA Phase 6",
+            "year": 2024,
+            "quarter": "Q1",
+            "avg_price_per_marla_pkr": 13500000,
+            "rental_yield_pct": 2.3,
+            "vacancy_rate_pct": 9.8,
+            "num_transactions": 175,
+            "price_change_yoy_pct": 10.7,
+            "source_confidence": 0.92
+          },
+          {
+            "area": "DHA Phase 6",
+            "year": 2024,
+            "quarter": "Q2",
+            "avg_price_per_marla_pkr": 14000000,
+            "rental_yield_pct": 2.3,
+            "vacancy_rate_pct": 9.2,
+            "num_transactions": 190,
+            "price_change_yoy_pct": 12,
+            "source_confidence": 0.92
+          },
+          {
+            "area": "DHA Phase 6",
+            "year": 2024,
+            "quarter": "Q3",
+            "avg_price_per_marla_pkr": 14800000,
+            "rental_yield_pct": 2.2,
+            "vacancy_rate_pct": 8.5,
+            "num_transactions": 210,
+            "price_change_yoy_pct": 15.6,
+            "source_confidence": 0.92
+          },
+          {
+            "area": "DHA Phase 6",
+            "year": 2024,
+            "quarter": "Q4",
+            "avg_price_per_marla_pkr": 15500000,
+            "rental_yield_pct": 2.1,
+            "vacancy_rate_pct": 8,
+            "num_transactions": 225,
+            "price_change_yoy_pct": 19.2,
+            "source_confidence": 0.92
+          },
+          {
+            "area": "DHA Phase 6",
+            "year": 2025,
+            "quarter": "Q1",
+            "avg_price_per_marla_pkr": 16200000,
+            "rental_yield_pct": 2.1,
+            "vacancy_rate_pct": 7.5,
+            "num_transactions": 240,
+            "price_change_yoy_pct": 20,
+            "source_confidence": 0.93
+          },
+          {
+            "area": "DHA Phase 6",
+            "year": 2025,
+            "quarter": "Q2",
+            "avg_price_per_marla_pkr": 17000000,
+            "rental_yield_pct": 2,
+            "vacancy_rate_pct": 7,
+            "num_transactions": 255,
+            "price_change_yoy_pct": 21.4,
+            "source_confidence": 0.93
+          },
+          {
+            "area": "DHA Phase 6",
+            "year": 2025,
+            "quarter": "Q3",
+            "avg_price_per_marla_pkr": 17500000,
+            "rental_yield_pct": 2,
+            "vacancy_rate_pct": 7.2,
+            "num_transactions": 245,
+            "price_change_yoy_pct": 18.2,
+            "source_confidence": 0.93
+          },
+          {
+            "area": "DHA Phase 6",
+            "year": 2025,
+            "quarter": "Q4",
+            "avg_price_per_marla_pkr": 18000000,
+            "rental_yield_pct": 1.9,
+            "vacancy_rate_pct": 7.5,
+            "num_transactions": 235,
+            "price_change_yoy_pct": 16.1,
+            "source_confidence": 0.93
+          },
+          {
+            "area": "Bahria Town",
+            "year": 2020,
+            "quarter": "Q1",
+            "avg_price_per_marla_pkr": 6200000,
+            "rental_yield_pct": 3.8,
+            "vacancy_rate_pct": 15,
+            "num_transactions": 110,
+            "price_change_yoy_pct": -5.2,
+            "source_confidence": 0.9
+          },
+          {
+            "area": "Bahria Town",
+            "year": 2020,
+            "quarter": "Q4",
+            "avg_price_per_marla_pkr": 6000000,
+            "rental_yield_pct": 4,
+            "vacancy_rate_pct": 16.5,
+            "num_transactions": 85,
+            "price_change_yoy_pct": -6.8,
+            "source_confidence": 0.9
+          },
+          {
+            "area": "Bahria Town",
+            "year": 2021,
+            "quarter": "Q2",
+            "avg_price_per_marla_pkr": 6500000,
+            "rental_yield_pct": 3.7,
+            "vacancy_rate_pct": 14,
+            "num_transactions": 125,
+            "price_change_yoy_pct": 5,
+            "source_confidence": 0.9
+          },
+          {
+            "area": "Bahria Town",
+            "year": 2021,
+            "quarter": "Q4",
+            "avg_price_per_marla_pkr": 7200000,
+            "rental_yield_pct": 3.5,
+            "vacancy_rate_pct": 12,
+            "num_transactions": 155,
+            "price_change_yoy_pct": 20,
+            "source_confidence": 0.9
+          },
+          {
+            "area": "Bahria Town",
+            "year": 2022,
+            "quarter": "Q2",
+            "avg_price_per_marla_pkr": 8500000,
+            "rental_yield_pct": 3.2,
+            "vacancy_rate_pct": 10.5,
+            "num_transactions": 180,
+            "price_change_yoy_pct": 30.8,
+            "source_confidence": 0.9
+          },
+          {
+            "area": "Bahria Town",
+            "year": 2022,
+            "quarter": "Q4",
+            "avg_price_per_marla_pkr": 9200000,
+            "rental_yield_pct": 3,
+            "vacancy_rate_pct": 9.8,
+            "num_transactions": 195,
+            "price_change_yoy_pct": 27.8,
+            "source_confidence": 0.9
+          },
+          {
+            "area": "Bahria Town",
+            "year": 2023,
+            "quarter": "Q2",
+            "avg_price_per_marla_pkr": 9800000,
+            "rental_yield_pct": 2.9,
+            "vacancy_rate_pct": 10.2,
+            "num_transactions": 175,
+            "price_change_yoy_pct": 15.3,
+            "source_confidence": 0.88
+          },
+          {
+            "area": "Bahria Town",
+            "year": 2023,
+            "quarter": "Q4",
+            "avg_price_per_marla_pkr": 10200000,
+            "rental_yield_pct": 2.8,
+            "vacancy_rate_pct": 11,
+            "num_transactions": 160,
+            "price_change_yoy_pct": 10.9,
+            "source_confidence": 0.88
+          },
+          {
+            "area": "Bahria Town",
+            "year": 2024,
+            "quarter": "Q2",
+            "avg_price_per_marla_pkr": 11000000,
+            "rental_yield_pct": 2.7,
+            "vacancy_rate_pct": 9.5,
+            "num_transactions": 185,
+            "price_change_yoy_pct": 12.2,
+            "source_confidence": 0.9
+          },
+          {
+            "area": "Bahria Town",
+            "year": 2024,
+            "quarter": "Q4",
+            "avg_price_per_marla_pkr": 12000000,
+            "rental_yield_pct": 2.5,
+            "vacancy_rate_pct": 8.8,
+            "num_transactions": 205,
+            "price_change_yoy_pct": 17.6,
+            "source_confidence": 0.9
+          },
+          {
+            "area": "Bahria Town",
+            "year": 2025,
+            "quarter": "Q2",
+            "avg_price_per_marla_pkr": 13200000,
+            "rental_yield_pct": 2.4,
+            "vacancy_rate_pct": 8,
+            "num_transactions": 220,
+            "price_change_yoy_pct": 20,
+            "source_confidence": 0.91
+          },
+          {
+            "area": "Bahria Town",
+            "year": 2025,
+            "quarter": "Q4",
+            "avg_price_per_marla_pkr": 14000000,
+            "rental_yield_pct": 2.3,
+            "vacancy_rate_pct": 8.5,
+            "num_transactions": 210,
+            "price_change_yoy_pct": 16.7,
+            "source_confidence": 0.91
+          },
+          {
+            "area": "Gulberg",
+            "year": 2020,
+            "quarter": "Q1",
+            "avg_price_per_marla_pkr": 15000000,
+            "rental_yield_pct": 2,
+            "vacancy_rate_pct": 8,
+            "num_transactions": 55,
+            "price_change_yoy_pct": -1.5,
+            "source_confidence": 0.88
+          },
+          {
+            "area": "Gulberg",
+            "year": 2021,
+            "quarter": "Q1",
+            "avg_price_per_marla_pkr": 15500000,
+            "rental_yield_pct": 2,
+            "vacancy_rate_pct": 7.5,
+            "num_transactions": 62,
+            "price_change_yoy_pct": 3.3,
+            "source_confidence": 0.88
+          },
+          {
+            "area": "Gulberg",
+            "year": 2022,
+            "quarter": "Q1",
+            "avg_price_per_marla_pkr": 17000000,
+            "rental_yield_pct": 1.9,
+            "vacancy_rate_pct": 7,
+            "num_transactions": 70,
+            "price_change_yoy_pct": 9.7,
+            "source_confidence": 0.88
+          },
+          {
+            "area": "Gulberg",
+            "year": 2023,
+            "quarter": "Q1",
+            "avg_price_per_marla_pkr": 18500000,
+            "rental_yield_pct": 1.8,
+            "vacancy_rate_pct": 7.5,
+            "num_transactions": 65,
+            "price_change_yoy_pct": 8.8,
+            "source_confidence": 0.85
+          },
+          {
+            "area": "Gulberg",
+            "year": 2024,
+            "quarter": "Q1",
+            "avg_price_per_marla_pkr": 20000000,
+            "rental_yield_pct": 1.7,
+            "vacancy_rate_pct": 7.2,
+            "num_transactions": 72,
+            "price_change_yoy_pct": 8.1,
+            "source_confidence": 0.87
+          },
+          {
+            "area": "Gulberg",
+            "year": 2025,
+            "quarter": "Q1",
+            "avg_price_per_marla_pkr": 22000000,
+            "rental_yield_pct": 1.6,
+            "vacancy_rate_pct": 6.8,
+            "num_transactions": 78,
+            "price_change_yoy_pct": 10,
+            "source_confidence": 0.88
+          },
+          {
+            "area": "Johar Town",
+            "year": 2020,
+            "quarter": "Q1",
+            "avg_price_per_marla_pkr": 4500000,
+            "rental_yield_pct": 4.5,
+            "vacancy_rate_pct": 18,
+            "num_transactions": 90,
+            "price_change_yoy_pct": -3,
+            "source_confidence": 0.85
+          },
+          {
+            "area": "Johar Town",
+            "year": 2021,
+            "quarter": "Q1",
+            "avg_price_per_marla_pkr": 4800000,
+            "rental_yield_pct": 4.3,
+            "vacancy_rate_pct": 16,
+            "num_transactions": 105,
+            "price_change_yoy_pct": 6.7,
+            "source_confidence": 0.85
+          },
+          {
+            "area": "Johar Town",
+            "year": 2022,
+            "quarter": "Q1",
+            "avg_price_per_marla_pkr": 5500000,
+            "rental_yield_pct": 4,
+            "vacancy_rate_pct": 14,
+            "num_transactions": 125,
+            "price_change_yoy_pct": 14.6,
+            "source_confidence": 0.85
+          },
+          {
+            "area": "Johar Town",
+            "year": 2023,
+            "quarter": "Q1",
+            "avg_price_per_marla_pkr": 6200000,
+            "rental_yield_pct": 3.8,
+            "vacancy_rate_pct": 13.5,
+            "num_transactions": 115,
+            "price_change_yoy_pct": 12.7,
+            "source_confidence": 0.83
+          },
+          {
+            "area": "Johar Town",
+            "year": 2024,
+            "quarter": "Q1",
+            "avg_price_per_marla_pkr": 7000000,
+            "rental_yield_pct": 3.5,
+            "vacancy_rate_pct": 12,
+            "num_transactions": 135,
+            "price_change_yoy_pct": 12.9,
+            "source_confidence": 0.85
+          },
+          {
+            "area": "Johar Town",
+            "year": 2025,
+            "quarter": "Q1",
+            "avg_price_per_marla_pkr": 7800000,
+            "rental_yield_pct": 3.3,
+            "vacancy_rate_pct": 11.5,
+            "num_transactions": 145,
+            "price_change_yoy_pct": 11.4,
+            "source_confidence": 0.86
+          },
+          {
+            "area": "Model Town",
+            "year": 2020,
+            "quarter": "Q1",
+            "avg_price_per_marla_pkr": 12000000,
+            "rental_yield_pct": 2.2,
+            "vacancy_rate_pct": 9,
+            "num_transactions": 45,
+            "price_change_yoy_pct": -0.8,
+            "source_confidence": 0.87
+          },
+          {
+            "area": "Model Town",
+            "year": 2021,
+            "quarter": "Q1",
+            "avg_price_per_marla_pkr": 12500000,
+            "rental_yield_pct": 2.1,
+            "vacancy_rate_pct": 8.5,
+            "num_transactions": 50,
+            "price_change_yoy_pct": 4.2,
+            "source_confidence": 0.87
+          },
+          {
+            "area": "Model Town",
+            "year": 2022,
+            "quarter": "Q1",
+            "avg_price_per_marla_pkr": 14000000,
+            "rental_yield_pct": 2,
+            "vacancy_rate_pct": 7.8,
+            "num_transactions": 58,
+            "price_change_yoy_pct": 12,
+            "source_confidence": 0.87
+          },
+          {
+            "area": "Model Town",
+            "year": 2023,
+            "quarter": "Q1",
+            "avg_price_per_marla_pkr": 15200000,
+            "rental_yield_pct": 1.9,
+            "vacancy_rate_pct": 8.2,
+            "num_transactions": 52,
+            "price_change_yoy_pct": 8.6,
+            "source_confidence": 0.85
+          },
+          {
+            "area": "Model Town",
+            "year": 2024,
+            "quarter": "Q1",
+            "avg_price_per_marla_pkr": 16500000,
+            "rental_yield_pct": 1.8,
+            "vacancy_rate_pct": 7.5,
+            "num_transactions": 60,
+            "price_change_yoy_pct": 8.6,
+            "source_confidence": 0.87
+          },
+          {
+            "area": "Model Town",
+            "year": 2025,
+            "quarter": "Q1",
+            "avg_price_per_marla_pkr": 18000000,
+            "rental_yield_pct": 1.7,
+            "vacancy_rate_pct": 7,
+            "num_transactions": 65,
+            "price_change_yoy_pct": 9.1,
+            "source_confidence": 0.88
+          }
+        ]
+      },
+      {
+        "sourceId": "reit-dashboard-q1-2026",
+        "sourceType": "json",
+        "sourceName": "Pakistan Investment Dashboard - Q1 2026",
+        "credibilityScore": 0.88,
+        "freshness": "2026-05-20T12:00:38.974Z",
+        "claims": [
+          {
+            "metric": "reit_return_1y_reit-dcr",
+            "value": 12.5,
+            "unit": "percent",
+            "confidence": 0.88,
+            "context": "Dolmen City REIT: 1-year annualized return"
+          },
+          {
+            "metric": "risk_score_reit-dcr",
+            "value": 0.45,
+            "unit": "score_0_to_1",
+            "confidence": 0.85,
+            "context": "Dolmen City REIT: Risk score (0 = low risk, 1 = high risk)"
+          },
+          {
+            "metric": "reit_return_1y_reit-akdrf",
+            "value": 10.1,
+            "unit": "percent",
+            "confidence": 0.88,
+            "context": "AKD REIT Fund: 1-year annualized return"
+          },
+          {
+            "metric": "risk_score_reit-akdrf",
+            "value": 0.52,
+            "unit": "score_0_to_1",
+            "confidence": 0.85,
+            "context": "AKD REIT Fund: Risk score (0 = low risk, 1 = high risk)"
+          },
+          {
+            "metric": "mutual_fund_return_1y_mf-nbp-islamic-stock-fund",
+            "value": 28.5,
+            "unit": "percent",
+            "confidence": 0.88,
+            "context": "NBP Islamic Stock Fund: 1-year annualized return"
+          },
+          {
+            "metric": "risk_score_mf-nbp-islamic-stock-fund",
+            "value": 0.72,
+            "unit": "score_0_to_1",
+            "confidence": 0.85,
+            "context": "NBP Islamic Stock Fund: Risk score (0 = low risk, 1 = high risk)"
+          },
+          {
+            "metric": "mutual_fund_return_1y_mf-al-meezan-income-fund",
+            "value": 18.2,
+            "unit": "percent",
+            "confidence": 0.88,
+            "context": "Al Meezan Income Fund: 1-year annualized return"
+          },
+          {
+            "metric": "risk_score_mf-al-meezan-income-fund",
+            "value": 0.35,
+            "unit": "score_0_to_1",
+            "confidence": 0.85,
+            "context": "Al Meezan Income Fund: Risk score (0 = low risk, 1 = high risk)"
+          },
+          {
+            "metric": "mutual_fund_return_1y_mf-hbl-multi-asset-fund",
+            "value": 22,
+            "unit": "percent",
+            "confidence": 0.88,
+            "context": "HBL Multi Asset Fund: 1-year annualized return"
+          },
+          {
+            "metric": "risk_score_mf-hbl-multi-asset-fund",
+            "value": 0.55,
+            "unit": "score_0_to_1",
+            "confidence": 0.85,
+            "context": "HBL Multi Asset Fund: Risk score (0 = low risk, 1 = high risk)"
+          },
+          {
+            "metric": "government_bond_return_1y_bond-pib-10y",
+            "value": 15.2,
+            "unit": "percent",
+            "confidence": 0.88,
+            "context": "Pakistan Investment Bonds (PIB) - 10Y: 1-year annualized return"
+          },
+          {
+            "metric": "risk_score_bond-pib-10y",
+            "value": 0.15,
+            "unit": "score_0_to_1",
+            "confidence": 0.85,
+            "context": "Pakistan Investment Bonds (PIB) - 10Y: Risk score (0 = low risk, 1 = high risk)"
+          },
+          {
+            "metric": "government_bond_return_1y_bond-pib-5y",
+            "value": 14.5,
+            "unit": "percent",
+            "confidence": 0.88,
+            "context": "Pakistan Investment Bonds (PIB) - 5Y: 1-year annualized return"
+          },
+          {
+            "metric": "risk_score_bond-pib-5y",
+            "value": 0.18,
+            "unit": "score_0_to_1",
+            "confidence": 0.85,
+            "context": "Pakistan Investment Bonds (PIB) - 5Y: Risk score (0 = low risk, 1 = high risk)"
+          },
+          {
+            "metric": "cryptocurrency_return_1y_crypto-btc",
+            "value": 85,
+            "unit": "percent",
+            "confidence": 0.88,
+            "context": "Bitcoin: 1-year annualized return"
+          },
+          {
+            "metric": "risk_score_crypto-btc",
+            "value": 0.92,
+            "unit": "score_0_to_1",
+            "confidence": 0.85,
+            "context": "Bitcoin: Risk score (0 = low risk, 1 = high risk)"
+          },
+          {
+            "metric": "cryptocurrency_return_1y_crypto-eth",
+            "value": 62,
+            "unit": "percent",
+            "confidence": 0.88,
+            "context": "Ethereum: 1-year annualized return"
+          },
+          {
+            "metric": "risk_score_crypto-eth",
+            "value": 0.88,
+            "unit": "score_0_to_1",
+            "confidence": 0.85,
+            "context": "Ethereum: Risk score (0 = low risk, 1 = high risk)"
+          },
+          {
+            "metric": "market_sentiment_overall",
+            "value": "cautiously_optimistic",
+            "unit": "sentiment",
+            "confidence": 0.8,
+            "context": "Overall market sentiment from PSX analytics"
+          },
+          {
+            "metric": "market_key_factors",
+            "value": [
+              "SBP rate cuts expected in Q2 2026",
+              "IMF program on track",
+              "Political stability improved",
+              "Inflation trending down from 25% to 12%",
+              "Property market shows regional divergence"
+            ],
+            "unit": "factors",
+            "confidence": 0.8,
+            "context": "Key market factors influencing investment outlook"
+          }
+        ],
+        "temporalData": [],
+        "rawData": {
+          "dashboard_meta": {
+            "title": "Pakistan Investment Dashboard - Q1 2026",
+            "generated_at": "2026-01-15T09:30:00Z",
+            "source": "PSX Market Analytics",
+            "credibility": 0.88,
+            "data_freshness": "2026-01-15"
+          },
+          "reit_funds": [
+            {
+              "name": "Dolmen City REIT",
+              "ticker": "DCR",
+              "type": "REIT",
+              "current_price_pkr": 32.5,
+              "nav_per_unit": 38.2,
+              "dividend_yield_pct": 7.8,
+              "annualized_return_1y_pct": 12.5,
+              "annualized_return_3y_pct": 9.8,
+              "annualized_return_5y_pct": 8.2,
+              "risk_score": 0.45,
+              "liquidity_score": 0.82,
+              "market_cap_billion_pkr": 18.5,
+              "occupancy_rate_pct": 94.2,
+              "property_type": "Commercial Mall",
+              "location": "Karachi",
+              "last_updated": "2026-01-14T16:00:00Z"
+            },
+            {
+              "name": "AKD REIT Fund",
+              "ticker": "AKDRF",
+              "type": "REIT",
+              "current_price_pkr": 15.8,
+              "nav_per_unit": 18.9,
+              "dividend_yield_pct": 6.2,
+              "annualized_return_1y_pct": 10.1,
+              "annualized_return_3y_pct": 7.5,
+              "annualized_return_5y_pct": 6.8,
+              "risk_score": 0.52,
+              "liquidity_score": 0.65,
+              "market_cap_billion_pkr": 5.2,
+              "occupancy_rate_pct": 88.5,
+              "property_type": "Mixed Use",
+              "location": "Lahore",
+              "last_updated": "2026-01-14T16:00:00Z"
+            }
+          ],
+          "mutual_funds": [
+            {
+              "name": "NBP Islamic Stock Fund",
+              "amc": "NBP Fund Management",
+              "type": "Equity Fund",
+              "nav_pkr": 22.45,
+              "annualized_return_1y_pct": 28.5,
+              "annualized_return_3y_pct": 18.2,
+              "annualized_return_5y_pct": 14.5,
+              "risk_score": 0.72,
+              "expense_ratio_pct": 2.1,
+              "min_investment_pkr": 5000,
+              "liquidity_score": 0.9,
+              "fund_size_billion_pkr": 12.8,
+              "sharpe_ratio": 1.35,
+              "last_updated": "2026-01-14T16:00:00Z"
+            },
+            {
+              "name": "Al Meezan Income Fund",
+              "amc": "Al Meezan Investment",
+              "type": "Income Fund",
+              "nav_pkr": 58.3,
+              "annualized_return_1y_pct": 18.2,
+              "annualized_return_3y_pct": 14.8,
+              "annualized_return_5y_pct": 12.5,
+              "risk_score": 0.35,
+              "expense_ratio_pct": 1.5,
+              "min_investment_pkr": 1000,
+              "liquidity_score": 0.95,
+              "fund_size_billion_pkr": 45.2,
+              "sharpe_ratio": 1.62,
+              "last_updated": "2026-01-14T16:00:00Z"
+            },
+            {
+              "name": "HBL Multi Asset Fund",
+              "amc": "HBL Asset Management",
+              "type": "Balanced Fund",
+              "nav_pkr": 15.2,
+              "annualized_return_1y_pct": 22,
+              "annualized_return_3y_pct": 15.5,
+              "annualized_return_5y_pct": 12,
+              "risk_score": 0.55,
+              "expense_ratio_pct": 1.8,
+              "min_investment_pkr": 10000,
+              "liquidity_score": 0.88,
+              "fund_size_billion_pkr": 8.5,
+              "sharpe_ratio": 1.45,
+              "last_updated": "2026-01-14T16:00:00Z"
+            }
+          ],
+          "government_bonds": [
+            {
+              "name": "Pakistan Investment Bonds (PIB) - 10Y",
+              "type": "Government Bond",
+              "tenor_years": 10,
+              "coupon_rate_pct": 14.5,
+              "current_yield_pct": 15.2,
+              "risk_score": 0.15,
+              "min_investment_pkr": 100000,
+              "liquidity_score": 0.7,
+              "credit_rating": "B-",
+              "last_updated": "2026-01-14T16:00:00Z"
+            },
+            {
+              "name": "Pakistan Investment Bonds (PIB) - 5Y",
+              "type": "Government Bond",
+              "tenor_years": 5,
+              "coupon_rate_pct": 13.8,
+              "current_yield_pct": 14.5,
+              "risk_score": 0.18,
+              "min_investment_pkr": 100000,
+              "liquidity_score": 0.72,
+              "credit_rating": "B-",
+              "last_updated": "2026-01-14T16:00:00Z"
+            }
+          ],
+          "crypto": [
+            {
+              "name": "Bitcoin",
+              "ticker": "BTC",
+              "price_usd": 105000,
+              "price_pkr": 29400000,
+              "annualized_return_1y_pct": 85,
+              "annualized_return_3y_pct": 35,
+              "annualized_return_5y_pct": 42,
+              "risk_score": 0.92,
+              "volatility_30d_pct": 18.5,
+              "liquidity_score": 0.98,
+              "market_cap_trillion_usd": 2.1,
+              "regulatory_risk": "high",
+              "legal_status_pakistan": "unregulated",
+              "last_updated": "2026-01-15T09:00:00Z"
+            },
+            {
+              "name": "Ethereum",
+              "ticker": "ETH",
+              "price_usd": 4200,
+              "price_pkr": 1176000,
+              "annualized_return_1y_pct": 62,
+              "annualized_return_3y_pct": 22,
+              "annualized_return_5y_pct": 55,
+              "risk_score": 0.88,
+              "volatility_30d_pct": 22,
+              "liquidity_score": 0.95,
+              "market_cap_trillion_usd": 0.5,
+              "regulatory_risk": "high",
+              "legal_status_pakistan": "unregulated",
+              "last_updated": "2026-01-15T09:00:00Z"
+            }
+          ],
+          "market_sentiment": {
+            "overall": "cautiously_optimistic",
+            "property_sector": "mixed",
+            "equity_market": "bullish",
+            "bond_market": "stable",
+            "crypto_market": "volatile_bullish",
+            "key_factors": [
+              "SBP rate cuts expected in Q2 2026",
+              "IMF program on track",
+              "Political stability improved",
+              "Inflation trending down from 25% to 12%",
+              "Property market shows regional divergence"
+            ]
+          }
+        }
+      },
+      {
+        "sourceId": "html-market-article",
+        "sourceType": "html",
+        "sourceName": "Lahore Property Market Shows Signs of Cooling - Pakistan Real Estate Weekly",
+        "credibilityScore": 0.5,
+        "freshness": "2026-01-10T00:00:00.000Z",
+        "claims": [
+          {
+            "metric": "overall_property_price_growth",
+            "value": 8,
+            "unit": "percent",
+            "confidence": 0.6,
+            "context": "Article claims Lahore property growth has slowed to ~8% YoY, citing independent analysis"
+          },
+          {
+            "metric": "property_price_growth_yoy",
+            "value": 8.2,
+            "unit": "percent",
+            "confidence": 0.58,
+            "context": "DHA Phase 6 grew only 8.2% YoY in Q4 2025, down from 19.2% in Q4 2024"
+          },
+          {
+            "metric": "transaction_volume_change",
+            "value": -12,
+            "unit": "percent",
+            "confidence": 0.55,
+            "context": "Transaction volumes declined by 12% compared to same period last year"
+          },
+          {
+            "metric": "avg_rental_yield_premium",
+            "value": 2,
+            "unit": "percent",
+            "confidence": 0.55,
+            "context": "Rental yields compressed to 2.0% across premium locations"
+          },
+          {
+            "metric": "housing_supply_increase",
+            "value": 25,
+            "unit": "percent",
+            "confidence": 0.5,
+            "context": "New housing supply increased by 25% as developers complete delayed projects"
+          },
+          {
+            "metric": "bahria_town_price_growth",
+            "value": 10.5,
+            "unit": "percent",
+            "confidence": 0.55,
+            "context": "Bahria Town Lahore shows 10.5% growth per article analysis"
+          },
+          {
+            "metric": "borrowing_cost",
+            "value": 17.5,
+            "unit": "percent",
+            "confidence": 0.8,
+            "context": "Borrowing costs remain elevated at 17.5%"
+          },
+          {
+            "metric": "expected_property_growth_2026_2028",
+            "value": {
+              "min": 6,
+              "max": 8
+            },
+            "unit": "percent",
+            "confidence": 0.45,
+            "context": "Article predicts 6-8% annual growth, below inflation (negative real return)"
+          },
+          {
+            "metric": "inventory_increase",
+            "value": 30,
+            "unit": "percent",
+            "confidence": 0.5,
+            "context": "New apartment complexes in DHA and Bahria increased inventory by 30%"
+          }
+        ],
+        "temporalData": [],
+        "rawData": "<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n  <title>Lahore Property Market Shows Signs of Cooling - Pakistan Real Estate Weekly</title>\n  <meta name=\"author\" content=\"Aisha Malik\">\n  <meta name=\"date\" content=\"2026-01-10\">\n  <meta name=\"source\" content=\"Pakistan Real Estate Weekly Blog\">\n</head>\n<body>\n  <article>\n    <h1>Lahore Property Market Shows Signs of Cooling After Years of Rapid Growth</h1>\n    <p class=\"byline\">By Aisha Malik | January 10, 2026 | Pakistan Real Estate Weekly</p>\n    <p class=\"category\">Market Analysis</p>\n\n    <section class=\"summary\">\n      <p>After several years of double-digit growth, Lahore's property market is showing clear signs of cooling. \n      Our analysis of recent transaction data suggests that <strong>year-over-year price growth has slowed to approximately 8%</strong>, \n      a significant decline from the 15-20% gains seen in 2022-2024.</p>\n    </section>\n\n    <section class=\"analysis\">\n      <h2>Key Findings</h2>\n      <ul>\n        <li>Average property prices in DHA Phase 6 grew only <strong>8.2% YoY</strong> in Q4 2025, down from 19.2% in Q4 2024</li>\n        <li>Transaction volumes have declined by 12% compared to the same period last year</li>\n        <li>Rental yields continue to compress, now averaging just 2.0% across premium locations</li>\n        <li>New housing supply has increased by 25% as developers complete delayed projects</li>\n        <li>Bahria Town Lahore shows slightly better performance at 10.5% growth but still below historical averages</li>\n      </ul>\n\n      <h2>Market Drivers</h2>\n      <p>Several factors are contributing to the slowdown:</p>\n      <ul>\n        <li><strong>Interest rate environment:</strong> Despite SBP cuts, borrowing costs remain elevated at 17.5%</li>\n        <li><strong>Oversupply:</strong> New apartment complexes in DHA and Bahria have increased available inventory by 30%</li>\n        <li><strong>Regulatory changes:</strong> New tax documentation requirements have discouraged cash-based transactions</li>\n        <li><strong>Alternative investments:</strong> Stock market rally and high bond yields are diverting capital from property</li>\n      </ul>\n\n      <h2>Price Predictions</h2>\n      <p>We expect Lahore property prices to grow at <strong>6-8% annually over the next 2-3 years</strong>, \n      which is below inflation and represents a negative real return for many investors. \n      Investors seeking higher returns should consider diversifying into REITs, mutual funds, or government bonds, \n      which currently offer more attractive risk-adjusted returns.</p>\n\n      <h2>Contradicting Reports</h2>\n      <p>Note: The Punjab Revenue Authority's recent report claimed property prices grew by 18% in 2025. \n      However, our independent analysis based on actual transaction data from 500+ verified sales shows \n      growth closer to 8%. The discrepancy may be due to the PRA's reliance on listed prices rather than \n      actual transaction prices, and their sample being skewed toward high-end properties in newer developments.</p>\n    </section>\n\n    <section class=\"disclaimer\">\n      <p><em>Disclaimer: This analysis is based on data from approximately 500 verified transactions \n      and may not represent all market segments. The author is not a licensed financial advisor. \n      Past performance does not guarantee future results.</em></p>\n    </section>\n\n    <footer>\n      <p>Published: January 10, 2026</p>\n      <p>Source credibility: Independent blog, unaudited data</p>\n    </footer>\n  </article>\n</body>\n</html>\n"
+      },
+      {
+        "sourceId": "realtime-feed",
+        "sourceType": "feed",
+        "sourceName": "MarketPulse Pakistan Live Feed",
+        "credibilityScore": 0.7,
+        "freshness": "2026-05-20T12:00:38.974Z",
+        "claims": [
+          {
+            "metric": "sentiment_property_lahore",
+            "value": "negative",
+            "unit": "sentiment",
+            "confidence": 0.75,
+            "context": "Feed sentiment: DHA Phase 6 sees 15% drop in buyer inquiries this month"
+          },
+          {
+            "metric": "avg_price_dha6_per_marla",
+            "value": 18500000,
+            "unit": "PKR",
+            "confidence": 0.8,
+            "context": "Feed: avg_price_dha6_per_marla (monthly)"
+          },
+          {
+            "metric": "market_event_policy",
+            "value": "positive",
+            "unit": "event",
+            "confidence": 0.85,
+            "context": "Market event: SBP signals further rate cuts in upcoming MPC meeting"
+          },
+          {
+            "metric": "sentiment_equity_pakistan",
+            "value": "bullish",
+            "unit": "sentiment",
+            "confidence": 0.9,
+            "context": "Feed sentiment: PSX index crosses 85,000 milestone for first time"
+          },
+          {
+            "metric": "pib_10y_yield",
+            "value": 15.2,
+            "unit": "percent",
+            "confidence": 0.92,
+            "context": "Feed: pib_10y_yield (weekly)"
+          },
+          {
+            "metric": "sentiment_property_lahore",
+            "value": "positive",
+            "unit": "sentiment",
+            "confidence": 0.78,
+            "context": "Feed sentiment: New metro line extension boosts property values in Johar Town corridor"
+          },
+          {
+            "metric": "avg_price_dha6_per_marla",
+            "value": 19200000,
+            "unit": "PKR",
+            "confidence": 0.6,
+            "context": "Feed: avg_price_dha6_per_marla (yearly)"
+          },
+          {
+            "metric": "sentiment_mutual_funds_pakistan",
+            "value": "positive",
+            "unit": "sentiment",
+            "confidence": 0.82,
+            "context": "Feed sentiment: Islamic equity funds outperform conventional peers by 5% in 2025"
+          }
+        ],
+        "temporalData": [],
+        "rawData": {
+          "sourceId": "realtime-feed",
+          "sourceType": "feed",
+          "sourceName": "MarketPulse Pakistan Live Feed",
+          "metadata": {
+            "feedSource": "MarketPulse Pakistan Live Feed",
+            "feedType": "real-time",
+            "credibilityScore": 0.7,
+            "lastCheck": "2026-01-15T10:00:00Z",
+            "refreshInterval": 30
+          },
+          "stats": {
+            "totalEntries": 12,
+            "cleanEntries": 8,
+            "filteredEntries": 4,
+            "filteredBreakdown": {
+              "stale": 1,
+              "corrupt": 1,
+              "duplicate": 1,
+              "spam": 2
+            }
+          },
+          "clean": [
+            {
+              "id": "feed-001",
+              "timestamp": "2026-01-15T09:58:00Z",
+              "type": "sentiment",
+              "category": "property",
+              "location": "Lahore",
+              "signal": "negative",
+              "headline": "DHA Phase 6 sees 15% drop in buyer inquiries this month",
+              "metric": null,
+              "unit": null,
+              "period": null,
+              "confidence": 0.75,
+              "sourceType": "aggregated_survey",
+              "qualityScore": 0.75
+            },
+            {
+              "id": "feed-002",
+              "timestamp": "2026-01-15T09:55:00Z",
+              "type": "price_update",
+              "category": "property",
+              "location": "Lahore",
+              "signal": null,
+              "headline": null,
+              "metric": "avg_price_dha6_per_marla",
+              "value": 18500000,
+              "unit": "PKR",
+              "changePct": 2.8,
+              "period": "monthly",
+              "confidence": 0.8,
+              "sourceType": "dealer_network",
+              "qualityScore": 0.8
+            },
+            {
+              "id": "feed-004",
+              "timestamp": "2026-01-15T09:50:00Z",
+              "type": "market_event",
+              "category": "policy",
+              "location": "Pakistan",
+              "signal": "positive",
+              "headline": "SBP signals further rate cuts in upcoming MPC meeting",
+              "metric": null,
+              "unit": null,
+              "period": null,
+              "confidence": 0.85,
+              "sourceType": "news_wire",
+              "qualityScore": 0.9
+            },
+            {
+              "id": "feed-006",
+              "timestamp": "2026-01-15T09:42:00Z",
+              "type": "sentiment",
+              "category": "equity",
+              "location": "Pakistan",
+              "signal": "bullish",
+              "headline": "PSX index crosses 85,000 milestone for first time",
+              "metric": null,
+              "unit": null,
+              "period": null,
+              "confidence": 0.9,
+              "sourceType": "exchange_data",
+              "qualityScore": 0.95
+            },
+            {
+              "id": "feed-008",
+              "timestamp": "2026-01-15T09:38:00Z",
+              "type": "price_update",
+              "category": "bonds",
+              "location": "Pakistan",
+              "signal": null,
+              "headline": null,
+              "metric": "pib_10y_yield",
+              "value": 15.2,
+              "unit": "percent",
+              "changePct": -0.3,
+              "period": "weekly",
+              "confidence": 0.92,
+              "sourceType": "sbp_data",
+              "qualityScore": 0.97
+            },
+            {
+              "id": "feed-009",
+              "timestamp": "2026-01-15T09:35:00Z",
+              "type": "sentiment",
+              "category": "property",
+              "location": "Lahore",
+              "signal": "positive",
+              "headline": "New metro line extension boosts property values in Johar Town corridor",
+              "metric": null,
+              "unit": null,
+              "period": null,
+              "confidence": 0.78,
+              "sourceType": "news_wire",
+              "qualityScore": 0.83
+            },
+            {
+              "id": "feed-010",
+              "timestamp": "2026-01-15T09:30:00Z",
+              "type": "price_update",
+              "category": "property",
+              "location": "Lahore",
+              "signal": null,
+              "headline": null,
+              "metric": "avg_price_dha6_per_marla",
+              "value": 19200000,
+              "unit": "PKR",
+              "changePct": 18,
+              "period": "yearly",
+              "confidence": 0.6,
+              "sourceType": "government_report",
+              "qualityScore": 0.65
+            },
+            {
+              "id": "feed-012",
+              "timestamp": "2026-01-15T09:20:00Z",
+              "type": "sentiment",
+              "category": "mutual_funds",
+              "location": "Pakistan",
+              "signal": "positive",
+              "headline": "Islamic equity funds outperform conventional peers by 5% in 2025",
+              "metric": null,
+              "unit": null,
+              "period": null,
+              "confidence": 0.82,
+              "sourceType": "fund_report",
+              "qualityScore": 0.82
+            }
+          ],
+          "filtered": [
+            {
+              "id": "feed-003",
+              "timestamp": "2025-06-15T08:00:00Z",
+              "type": "price_update",
+              "category": "property",
+              "location": "Lahore",
+              "metric": "avg_price_dha6_per_marla",
+              "value": 16000000,
+              "unit": "PKR",
+              "change_pct": -5,
+              "period": "monthly",
+              "confidence": 0.4,
+              "source_type": "unknown",
+              "is_stale": true,
+              "is_corrupt": false,
+              "_noise_reason": "Entry is 7 months old, should be filtered as stale",
+              "filterReasons": [
+                {
+                  "type": "stale",
+                  "reason": "Entry timestamp 2025-06-15T08:00:00Z is older than 6 months",
+                  "severity": "high"
+                }
+              ]
+            },
+            {
+              "id": "feed-005",
+              "timestamp": "2026-01-15T09:45:00Z",
+              "type": "price_update",
+              "category": "crypto",
+              "metric": "btc_pkr",
+              "value": null,
+              "unit": "PKR",
+              "change_pct": "ERROR",
+              "confidence": 0,
+              "source_type": "api_feed",
+              "is_stale": false,
+              "is_corrupt": true,
+              "_noise_reason": "Corrupt entry - null value and ERROR change_pct, API failure",
+              "filterReasons": [
+                {
+                  "type": "corrupt",
+                  "reason": "Entry contains null values or ERROR markers, likely API failure",
+                  "severity": "critical"
+                },
+                {
+                  "type": "spam",
+                  "reason": "Very low confidence (0), source: api_feed",
+                  "severity": "high"
+                }
+              ]
+            },
+            {
+              "id": "feed-007",
+              "timestamp": "2026-01-15T09:40:00Z",
+              "type": "sentiment",
+              "category": "property",
+              "location": "Lahore",
+              "signal": "positive",
+              "headline": "PROPERTY PRICES TO MOON! BUY NOW BEFORE ITS TOO LATE!!!",
+              "confidence": 0.15,
+              "source_type": "social_media",
+              "is_stale": false,
+              "is_corrupt": false,
+              "_noise_reason": "Spam-like content from social media, very low credibility",
+              "filterReasons": [
+                {
+                  "type": "spam",
+                  "reason": "Very low confidence (0.15), source: social_media",
+                  "severity": "high"
+                }
+              ]
+            },
+            {
+              "id": "feed-011",
+              "timestamp": "2026-01-15T09:25:00Z",
+              "type": "duplicate",
+              "category": "property",
+              "location": "Lahore",
+              "signal": "negative",
+              "headline": "DHA Phase 6 sees 15% drop in buyer inquiries this month",
+              "confidence": 0.75,
+              "source_type": "aggregated_survey",
+              "is_stale": false,
+              "is_corrupt": false,
+              "_noise_reason": "Duplicate of feed-001, should be filtered",
+              "filterReasons": [
+                {
+                  "type": "duplicate",
+                  "reason": "Duplicate headline: \"DHA Phase 6 sees 15% drop in buyer inquiries this month\"",
+                  "severity": "medium"
+                }
+              ]
+            }
+          ],
+          "filterLog": [
+            {
+              "entryId": "feed-003",
+              "action": "FILTERED",
+              "issues": [
+                {
+                  "type": "stale",
+                  "reason": "Entry timestamp 2025-06-15T08:00:00Z is older than 6 months",
+                  "severity": "high"
+                }
+              ],
+              "originalConfidence": 0.4
+            },
+            {
+              "entryId": "feed-005",
+              "action": "FILTERED",
+              "issues": [
+                {
+                  "type": "corrupt",
+                  "reason": "Entry contains null values or ERROR markers, likely API failure",
+                  "severity": "critical"
+                },
+                {
+                  "type": "spam",
+                  "reason": "Very low confidence (0), source: api_feed",
+                  "severity": "high"
+                }
+              ],
+              "originalConfidence": 0
+            },
+            {
+              "entryId": "feed-007",
+              "action": "FILTERED",
+              "issues": [
+                {
+                  "type": "spam",
+                  "reason": "Very low confidence (0.15), source: social_media",
+                  "severity": "high"
+                }
+              ],
+              "originalConfidence": 0.15
+            },
+            {
+              "entryId": "feed-011",
+              "action": "FILTERED",
+              "issues": [
+                {
+                  "type": "duplicate",
+                  "reason": "Duplicate headline: \"DHA Phase 6 sees 15% drop in buyer inquiries this month\"",
+                  "severity": "medium"
+                }
+              ],
+              "originalConfidence": 0.75
+            }
+          ],
+          "claims": [
+            {
+              "metric": "sentiment_property_lahore",
+              "value": "negative",
+              "unit": "sentiment",
+              "confidence": 0.75,
+              "context": "Feed sentiment: DHA Phase 6 sees 15% drop in buyer inquiries this month"
+            },
+            {
+              "metric": "avg_price_dha6_per_marla",
+              "value": 18500000,
+              "unit": "PKR",
+              "confidence": 0.8,
+              "context": "Feed: avg_price_dha6_per_marla (monthly)"
+            },
+            {
+              "metric": "market_event_policy",
+              "value": "positive",
+              "unit": "event",
+              "confidence": 0.85,
+              "context": "Market event: SBP signals further rate cuts in upcoming MPC meeting"
+            },
+            {
+              "metric": "sentiment_equity_pakistan",
+              "value": "bullish",
+              "unit": "sentiment",
+              "confidence": 0.9,
+              "context": "Feed sentiment: PSX index crosses 85,000 milestone for first time"
+            },
+            {
+              "metric": "pib_10y_yield",
+              "value": 15.2,
+              "unit": "percent",
+              "confidence": 0.92,
+              "context": "Feed: pib_10y_yield (weekly)"
+            },
+            {
+              "metric": "sentiment_property_lahore",
+              "value": "positive",
+              "unit": "sentiment",
+              "confidence": 0.78,
+              "context": "Feed sentiment: New metro line extension boosts property values in Johar Town corridor"
+            },
+            {
+              "metric": "avg_price_dha6_per_marla",
+              "value": 19200000,
+              "unit": "PKR",
+              "confidence": 0.6,
+              "context": "Feed: avg_price_dha6_per_marla (yearly)"
+            },
+            {
+              "metric": "sentiment_mutual_funds_pakistan",
+              "value": "positive",
+              "unit": "sentiment",
+              "confidence": 0.82,
+              "context": "Feed sentiment: Islamic equity funds outperform conventional peers by 5% in 2025"
+            }
+          ]
+        }
+      }
+    ]
+  }
+}
