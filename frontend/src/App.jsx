@@ -138,170 +138,7 @@ function App() {
     }
   };
 
-  const localUsersKey = 'investo_localUsers';
-  const localSessionKey = 'investo_localSession';
-
-  const readLocalUsers = () => {
-    try {
-      return JSON.parse(localStorage.getItem(localUsersKey) || '{}');
-    } catch {
-      return {};
-    }
-  };
-
-  const writeLocalUsers = (users) => {
-    localStorage.setItem(localUsersKey, JSON.stringify(users));
-  };
-
-  const startLocalSession = (email, password, mode = 'offline-demo') => {
-    const username = (email || 'user').split('@')[0] || 'user';
-    const users = readLocalUsers();
-    users[email] = password || users[email] || 'demo123';
-    writeLocalUsers(users);
-
-    const tokenSeed = `${email}:${Date.now()}`;
-    const access = `local.${btoa(tokenSeed).replace(/=+/g, '')}`;
-    const refresh = `local-refresh.${btoa(`${tokenSeed}:refresh`).replace(/=+/g, '')}`;
-
-    localStorage.setItem(localSessionKey, JSON.stringify({ email, username, mode, createdAt: new Date().toISOString() }));
-    setAccessToken(access);
-    setRefreshToken(refresh);
-    setIsAuthenticated(true);
-    setAuthUser(username);
-    setError(null);
-    navigate('landing', '/');
-  };
-
-  const isNetworkFetchFailure = (err) => {
-    const message = String(err?.message || err || '');
-    return err?.name === 'TypeError' || message.includes('Failed to fetch') || message.includes('NetworkError');
-  };
-
-  const buildOfflineTrace = (profile, scenarioId) => {
-    const location = profile.location || 'Karachi';
-    const traceId = `offline-${scenarioId}-${Date.now()}`;
-    const workplan = {
-      0: 'Ingest user profile locally',
-      1: 'Resolve contradictory signals',
-      2: 'Rank feasible investment options',
-      3: 'Produce audit trail for demo testing',
-      setAt: new Date().toISOString()
-    };
-
-    const steps = [
-      { id: 'step-1', timestamp: new Date().toISOString(), phase: 'analysis', action: 'Profile validation', details: { location, budget: profile.budget }, status: 'success' },
-      { id: 'step-2', timestamp: new Date().toISOString(), phase: 'analysis', action: 'Signal weighting', details: { resolved: true, contradictions: 2 }, status: 'success' },
-      { id: 'step-3', timestamp: new Date().toISOString(), phase: 'analysis', action: 'Recommendation synthesis', details: { recommendations: 3 }, status: 'success' }
-    ];
-
-    const decisions = [
-      { id: 'decision-1', timestamp: new Date().toISOString(), question: 'Prefer property or fallback assets?', options: ['property', 'fallback'], chosen: 'property', reasoning: 'A local property match clears the target return and risk thresholds.' }
-    ];
-
-    return { sessionId: traceId, workplan, steps, decisions, failures: [] };
-  };
-
-  const buildOfflineResults = (profile, scenarioId = 'conflicting-metrics') => {
-    const location = profile.location || 'Karachi';
-    const target = Number(profile.targetReturn || 15);
-    const budget = Number(profile.budget || 50000000);
-    const traceData = buildOfflineTrace(profile, scenarioId);
-    const traceId = traceData.sessionId;
-
-    const recommendations = [
-      {
-        id: 'offline-r1',
-        type: 'Property',
-        name: `${location} DHA Phase 6 Plot`,
-        location,
-        subLocation: 'Phase 6',
-        area: '1 Kanal',
-        expectedReturn: Math.max(target + 3, 18.5),
-        riskScore: 0.28,
-        liquidity: 'Medium',
-        explanation: 'Matched budget and return thresholds after credibility weighting.',
-        evidence: ['Budget fits within profile constraints', 'Risk score remains below threshold', 'Local source parity confirmed'],
-        source: 'Offline Demo Engine',
-        meetsReturn: true,
-        hasAcceptableRisk: true
-      },
-      {
-        id: 'offline-r2',
-        type: 'REIT',
-        name: `${location} REIT Basket`,
-        location: 'Pakistan',
-        subLocation: 'National',
-        expectedReturn: Math.max(target + 1, 16.0),
-        riskScore: 0.44,
-        liquidity: 'High',
-        explanation: 'Diversified fallback allocation with stable income characteristics.',
-        evidence: ['Diversified across multiple assets', 'Historically resilient income profile'],
-        source: 'Offline Demo Engine',
-        meetsReturn: true,
-        hasAcceptableRisk: true
-      },
-      {
-        id: 'offline-r3',
-        type: 'Mutual Fund',
-        name: 'Balanced Growth Fund',
-        location: 'Pakistan',
-        subLocation: 'Market Basket',
-        expectedReturn: Math.max(target - 1, 13.5),
-        riskScore: 0.34,
-        liquidity: 'High',
-        explanation: 'Lower-volatility option selected as a supportive fallback.',
-        evidence: ['Meets liquidity requirement', 'Preserves capital under moderate risk'],
-        source: 'Offline Demo Engine',
-        meetsReturn: false,
-        hasAcceptableRisk: true
-      }
-    ];
-
-    const sources = [
-      { name: `${location} Offline Market Snapshot`, type: 'table', credibility: 0.94, freshness: new Date().toISOString(), claims: 18, noisy: false },
-      { name: 'SBP Summary Bulletin', type: 'file', credibility: 0.96, freshness: new Date().toISOString(), claims: 12, noisy: false },
-      { name: 'Offline Demo Feed', type: 'rss', credibility: 0.81, freshness: new Date().toISOString(), claims: 9, noisy: true }
-    ];
-
-    const contradictions = [
-      { metric: 'Area valuation', sourceA: { name: 'Offline Market Snapshot', value: `${budget / 1000000}M`, credibility: 0.94 }, sourceB: { name: 'Demo Feed', value: `${(budget / 1000000) * 1.1}M`, credibility: 0.81 }, resolution: 'Weighted average by credibility', confidence: 0.88, method: 'credibility-weighted' },
-      { metric: 'Return expectation', sourceA: { name: 'SBP Summary Bulletin', value: `${target + 2}%`, credibility: 0.96 }, sourceB: { name: 'Demo Feed', value: `${target - 1}%`, credibility: 0.81 }, resolution: 'Official data preferred', confidence: 0.91, method: 'authority-priority' }
-    ];
-
-    const actionChain = [
-      { step: 1, name: 'Validate Market Data', status: 'success', before: 'Raw profile', after: 'Structured profile' },
-      { step: 2, name: 'Risk Assessment Model', status: 'success', before: 'Unknown risk', after: 'Moderate risk profile' },
-      { step: 3, name: 'Generate Recommendations', status: 'success', before: 'Unranked assets', after: '3 ranked options' }
-    ];
-
-    const rubric = {
-      total: 82,
-      max: 100,
-      criteria: [
-        { name: 'Constraint adherence', score: 26, max: 30 },
-        { name: 'Conflict resolution', score: 21, max: 25 },
-        { name: 'Recommendation quality', score: 22, max: 25 },
-        { name: 'Trace completeness', score: 13, max: 20 }
-      ]
-    };
-
-    return {
-      recommendations,
-      backendResults: {
-        traceId,
-        sources,
-        recommendations,
-        contradictions,
-        actionChain,
-        metrics: { analysisTimeMs: 1450, confidenceScore: 0.85, noiseFiltered: 3 },
-        rubric,
-        traceData,
-        snapshots: { traces: [`${traceId}.json`], features: [] },
-        offline: true
-      },
-      traceData
-    };
-  };
+  
 
   // Fetch full trace detail from backend when Trace tab is selected
   useEffect(() => {
@@ -400,11 +237,6 @@ function App() {
       try {
         data = await readJsonResponse(res, 'Login');
       } catch (readErr) {
-        // If backend replied with non-JSON (HTML) treat as unreachable and fallback
-        if (String(readErr.message || '').includes('returned non-JSON') || String(readErr.message || '').includes('Check VITE_API_BASE_URL')) {
-          startLocalSession(email, password);
-          return;
-        }
         throw readErr;
       }
       if (!res.ok || !data.ok) throw new Error(data.error || 'Login failed');
@@ -414,10 +246,6 @@ function App() {
       setAuthUser(data.user?.email?.split('@')[0] || email.split('@')[0] || 'user');
       navigate('landing', '/');
     } catch (err) {
-      if (isNetworkFetchFailure(err)) {
-        startLocalSession(email, password);
-        return;
-      }
       setError(err.message || 'Login failed');
     }
   };
@@ -438,10 +266,6 @@ function App() {
       try {
         data = await readJsonResponse(res, 'Registration');
       } catch (readErr) {
-        if (String(readErr.message || '').includes('returned non-JSON') || String(readErr.message || '').includes('Check VITE_API_BASE_URL')) {
-          startLocalSession(email, password, 'offline-demo');
-          return;
-        }
         throw readErr;
       }
       if (!res.ok || !data.ok) throw new Error(data.error || 'Registration failed');
@@ -451,10 +275,6 @@ function App() {
       setAuthUser(data.user?.email?.split('@')[0] || email.split('@')[0] || 'user');
       navigate('landing', '/');
     } catch (err) {
-      if (isNetworkFetchFailure(err)) {
-        startLocalSession(email, password, 'offline-demo');
-        return;
-      }
       setError(err.message || 'Registration failed');
     }
   };
@@ -510,7 +330,17 @@ function App() {
       });
 
       if (!response.ok) {
-        throw new Error(`Server returned HTTP ${response.status}`);
+        let errMsg = `Analysis request failed: HTTP ${response.status}`;
+        try {
+          const parsed = await readJsonResponse(response, 'Analysis');
+          errMsg = parsed.error || JSON.stringify(parsed).slice(0, 200);
+        } catch (e) {
+          try {
+            const t = await response.text();
+            errMsg += ` ${t.trim().slice(0, 200)}`;
+          } catch (_) {}
+        }
+        throw new Error(errMsg);
       }
 
       const reader = response.body.getReader();
@@ -552,14 +382,6 @@ function App() {
         console.log('Analysis was cancelled by the user.');
         return;
       }
-      if (isNetworkFetchFailure(err)) {
-        const offline = buildOfflineResults(profile, 'analysis');
-        setResults(offline.recommendations);
-        setBackendResults(offline.backendResults);
-        setTraceData(offline.traceData);
-        navigate('results', '/results');
-        return;
-      }
       console.error('Analysis failed:', err);
       setError(err.message || 'An unexpected error occurred during market scraping.');
       navigate('error', '/error');
@@ -596,21 +418,22 @@ function App() {
       const res = await authFetch('/api/score', {
         method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify(backendProfile)
       });
-      if (!res.ok) throw new Error('Score request failed');
+      if (!res.ok) {
+        let errMsg = `Scoring request failed: HTTP ${res.status}`;
+        try {
+          const parsed = await readJsonResponse(res, 'Scoring');
+          errMsg = parsed.error || JSON.stringify(parsed).slice(0,200);
+        } catch (e) {
+          try { const t = await res.text(); errMsg += ` ${t.trim().slice(0,200)}`; } catch(_){}
+        }
+        throw new Error(errMsg);
+      }
       const data = await readJsonResponse(res, 'Scoring');
       if (!data.ok) throw new Error(data.error || 'Scoring failed');
       setResults(data.recommendations);
       setBackendResults({ traceId: data.sessionId, sources: data.insights, recommendations: data.recommendations, rubric: data.rubric, actionChain: data.actionChain || [] });
       navigate('results', '/results');
     } catch (err) {
-      if (isNetworkFetchFailure(err)) {
-        const offline = buildOfflineResults(profile, 'score');
-        setResults(offline.recommendations);
-        setBackendResults(offline.backendResults);
-        setTraceData(offline.traceData);
-        navigate('results', '/results');
-        return;
-      }
       console.error('Quick score failed:', err);
       setError(err.message || 'Quick scoring failed');
       navigate('error', '/error');
@@ -630,6 +453,16 @@ function App() {
           riskTolerance: profile.risk
         } })
       });
+      if (!res.ok) {
+        let errMsg = `Demo run failed: HTTP ${res.status}`;
+        try {
+          const parsed = await readJsonResponse(res, 'Demo run');
+          errMsg = parsed.error || JSON.stringify(parsed).slice(0,200);
+        } catch (e) {
+          try { const t = await res.text(); errMsg += ` ${t.trim().slice(0,200)}`; } catch(_){}
+        }
+        throw new Error(errMsg);
+      }
       const data = await readJsonResponse(res, 'Demo run');
       if (!res.ok || !data.ok) throw new Error(data.error || 'Demo run failed');
       setResults(data.result.recommendations || []);
@@ -638,15 +471,6 @@ function App() {
       setActiveTab('overview');
       navigate('results', '/results');
     } catch (err) {
-      if (isNetworkFetchFailure(err)) {
-        const offline = buildOfflineResults(profile, scenarioId);
-        setResults(offline.recommendations);
-        setBackendResults(offline.backendResults);
-        setTraceData(offline.traceData);
-        setActiveTab('overview');
-        navigate('results', '/results');
-        return;
-      }
       setError(err.message || 'Demo run failed');
       navigate('error', '/error');
     }
