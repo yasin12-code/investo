@@ -33,6 +33,7 @@ android/**/outputs/
 # Environment files
 .env
 .env.*
+.env.local
 
 # Vercel
 .vercel/
